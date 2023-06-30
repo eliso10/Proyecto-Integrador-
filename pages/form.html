@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link rel="stylesheet" href="../styles/form.css">
+    <title>Popup</title>
+</head>
+<body>
+    <!-- Inicia Botón para abrir el modal (Formulario de nuevos productos) -->
+<br><br><br>
+    <div class="container text-center">
+        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@mdo">Crear</button>
+        <!-- <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@fat">Open modal for @fat</button>
+<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@getbootstrap">Open modal for @getbootstrap</button> -->
+    </div>
+    <!-- Termina Botón para abrir el modal (Formulario de nuevos productos) -->
+
+
+        <!-- Inicia el modal (Formulario de nuevos productos) -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-xl">
+            <div class="modal-content">
+            <!-- Inicia cabeza de modal -->
+            <div class="modal-header">
+                <h1 class="modal-title fs-5" id="exampleModalLabel">Nuevo producto</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <!-- Termina cabeza de modal -->
+
+            <!-- Inicia cuerpo de modal -->
+            <div class="modal-body conainter-fluid">
+                <form class="needs-validation" id="productForm" novalidate>
+                    <div class="row">
+                        <div class="row justify-content-md-center">
+                            <div class="col-md-7">
+                                <img src="../src/default-image-create-form.png" class="img-fluid rounded" alt="Imagen de muestra" id="articleImage">
+                            </div>
+                            <div class="col-md-5">
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <label for="article" class="form-label">Nombre del artículo</label>
+                                        <input type="text" class="form-control" name="Artículo" id="article" placeholder="Artículo" required>
+                                        <div class="valid-feedback">
+                                            ¡Genial!
+                                        </div>
+                                        <div class="invalid-feedback">
+                                            Es necesario colocar el nombre del artículo
+                                        </div>
+                                    </div>
+                                    <div class="col-md-12">
+                                        <label for="articleId" class="form-label">ID del artículo</label>
+                                        <input type="number" class="form-control" name="ID" id="articleId" min="0" placeholder="4321" required>
+                                        <div class="valid-feedback">
+                                            ¡Genial!
+                                        </div>
+                                        <div class="invalid-feedback">
+                                            Es necesario colocar el ID del artículo
+                                        </div>
+                                    </div>
+                                    <div class="col-md-12">
+                                        <label for="articlePrice" class="form-label">Precio</label>
+                                        <input type="number" class="form-control" name="Precio" id="articlePrice" min="0" placeholder="123" step="0.01" required>
+                                        <div class="valid-feedback">
+                                            ¡Genial!
+                                        </div>
+                                        <div class="invalid-feedback">
+                                            Es necesario colocar el precio del artículo
+                                        </div>
+                                    </div>
+                                    <div class="mb-12">
+                                        <label for="articleDescription" class="form-label">Descripción</label>
+                                        <textarea class="form-control" id="articleDescription" rows="5" placeholder="Descripción del producto" name="Descripción" required></textarea>
+                                        <div class="valid-feedback">
+                                            ¡Genial!
+                                        </div>
+                                        <div class="invalid-feedback">
+                                            Es necesario colocar la descripción del artículo
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-3 offset-md-2">
+                                <label for="imageForm" id="btn-image">Cargar imagen</label>
+                                <input type="file" name="Imagen" class="form-control" aria-label="file example" id="imageForm" accept="image/*" required>
+                                <div class="valid-feedback">
+                                    ¡Genial!
+                                </div>
+                                <div class="invalid-feedback">
+                                    Carga la imagen del artículo
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Inicia pie del modal -->
+                        <div class="modal-footer justify-content-right">
+                            <div class="row">
+                                <div class="col-12">
+                                    <button type="submit" value="Enviar" class="btn btn-primary">Enviar</button>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Termina pie de modal -->
+                    </div>
+                </form>
+            </div>
+            <!-- Termina cuerpo de modal -->
+
+
+
+        </div>
+    </div>
+    <!-- Termina el modal (Formulario de nuevos productos) -->
+
+    <!-- Script de bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js" integrity="sha384-fbbOQedDUMZZ5KreZpsbe1LCZPVmfTnH7ois6mU1QK+m14rQ1l2bGBq41eYeM/fS" crossorigin="anonymous"></script>
+<!-- JavaScript -->
+<script src="../js/uploadImage.js"></script>
+<script src="../js/jsonData.js"></script>
+<script src="../js/validateData.js"></script>
+</body>
+</html>
