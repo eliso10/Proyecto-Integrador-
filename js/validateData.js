@@ -10,8 +10,12 @@ Array.from(forms).forEach(form => {
     if (!form.checkValidity()) {
         event.preventDefault()
         event.stopPropagation()
-    }
+    } else{
+    const data = new FormData(event.target);
+    const allData = Object.fromEntries(data.entries());
 
+    console.log(JSON.stringify(allData));
+    }
     form.classList.add('was-validated')
     }, false)
 })
