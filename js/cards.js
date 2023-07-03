@@ -116,7 +116,7 @@ const populateElements = (infoPlantas, planta) => {
     infoPlantas.nombre.textContent = planta.nombre ;
     infoPlantas.descripcion.textContent = planta.descripcion;
     infoPlantas.precio.textContent = "$"+planta.precio+" / pesos";
-    infoPlantas.button.textContent = "Ver más";
+    infoPlantas.button.textContent = "Al Carrito";
 
     infoPlantas.nombre.classList.add("e1_4");
     infoPlantas.precio.classList.add("e1_5");
@@ -131,9 +131,7 @@ const renderElements = (elements, card, planta) => {
     img.src = planta.url;
     img.classList.add('img-fluid');
     img.alt = "Responsive image";
-    console.log(card.url);
     
-
     card.children[0].append(img);
     card.children[1].append(elements.nombre, elements.descripcion, elements.precio, elements.button);
 }
