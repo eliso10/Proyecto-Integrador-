@@ -6,7 +6,7 @@ body {
   .card-img-left {
     width: 45%;
     /* Link to your background image using in the property below! */
-    background: center url('/Proyecto-Integrador-/styles/pictures/Plantas_reyes_LOGOS-11.png');
+    background: center url('/styles/pictures/Plantas_reyes_LOGOS-11.png');
     background-size: contain;
     background-size: cover;
     background-size: contain;
