@@ -1,6 +1,20 @@
 /* hoja de estilos para la paguina de contact0*/
 @import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@700&display=swap');
 
+#navbarNav,.container-fluid{
+    justify-content: center;
+    align-items: center;
+    text-align: end;
+
+
+}
+
+.navbar{
+   
+   padding: 0;
+  
+}
+
 .divPrincipal{
     background-color: #679436;
     margin: none;

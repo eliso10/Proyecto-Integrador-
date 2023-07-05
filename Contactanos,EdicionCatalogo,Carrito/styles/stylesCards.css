@@ -1,0 +1,120 @@
+/* div {
+    margin-top: 30px;
+    border: solid black;
+} */
+
+.card{
+margin: 20px;
+width: 395px;
+height: 500px;
+border-radius: 24px;
+border: 2px solid #A5D09F;
+background: #A5D09F;
+}
+h1{
+    font-family: 'Merriweather', serif;
+    color: black;
+}
+button{
+    border: none;
+}
+
+.img-fluid{
+    width:443px;
+    height:295px;
+}
+
+
+.e1_2 { 
+    overflow:hidden;
+	border: 2px solid rgba(165.00000536441803, 208.0000028014183, 159.0000057220459, 1);
+	box-shadow:0px 4px 4px rgba(0, 0, 0, 0.25);
+	background-color:rgba(165.00000536441803, 208.0000028014183, 159.0000057220459, 1);
+	width:395px;
+	height:500px;
+	border-top-left-radius:24px;
+	border-top-right-radius:24px;
+	border-bottom-left-radius:24px;
+	border-bottom-right-radius:24px;
+	position:relative;
+}
+.e1_3 { 
+	box-shadow:0px 4px 4px rgba(0, 0, 0, 0.25);
+	width:395px;
+	height:296px;
+	position:absolute;
+	left:0px;
+	top:0px;
+	background-image:url(images/onion.png);
+	background-repeat:no-repeat;
+	background-size:cover;
+    border:1px solid rgba(0, 0, 0, 1);
+}
+
+.e1_4 { 
+	width:200px;
+	height:26px;
+	position:absolute;
+	left:32px;
+	top:326px;
+	font-family:Merriweather;
+	text-align:left;
+	font-size:20px;
+	letter-spacing:7;
+    
+}
+.e1_5 { 
+	color:rgba(66.00000366568565, 107.00000122189522, 31.000000052154064, 1);
+	width:142px;
+	height:26px;
+	position:absolute;
+	left:32px;
+	top:360px;
+	font-family:Montserrat;
+	text-align:left;
+	font-size:20px;
+	letter-spacing:0;
+}
+.e1_6 { 
+	color:rgba(109.43750202655792, 109.43750202655792, 109.43750202655792, 1);
+	width:322px;
+	height:21px;
+	position:absolute;
+	left:32px;
+	top:394px;
+	font-family:Montserrat;
+	text-align:left;
+	font-size:16px;
+	letter-spacing:0;
+}
+.e1_7 { 
+	width:443px;
+	height:296px;
+	position:absolute;
+	left:-24px;
+	top:0px;
+}
+.e2_8 { 
+	background-color:rgba(103.0000014603138, 148.000006377697, 54.00000058114529, 1);
+	width:137px;
+	height:47px;
+	position:absolute;
+	left:129px;
+	top:434px;
+    font-family:Merriweather;
+    color: white;
+   
+    
+}
+.e4_9 { 
+	color:rgba(255, 255, 255, 1);
+	width:106px;
+	height:26px;
+	position:absolute;
+	left:144px;
+	top:445px;
+	font-family:Merriweather;
+	text-align:center;
+	font-size:20px;
+	letter-spacing:0;
+}
