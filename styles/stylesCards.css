@@ -4,11 +4,11 @@
 } */
 
 .card{
-margin: 20px;
-width: 395px;
-height: 500px;
-border-radius: 24px;
-border: 2px solid #A5D09F;
+margin: 1.25rem;
+width: 24.688rem;
+height: 31.25rem;
+border-radius: 1.5rem;
+border: 0.125rem solid #A5D09F;
 background: #A5D09F;
 }
 h1{
@@ -20,101 +20,90 @@ button{
 }
 
 .img-fluid{
-    width:443px;
-    height:295px;
+    width:27.688rem;
+    height:18.438rem;
 }
 
 
-.e1_2 { 
+.tarjetaContenedor { 
     overflow:hidden;
-	border: 2px solid rgba(165.00000536441803, 208.0000028014183, 159.0000057220459, 1);
-	box-shadow:0px 4px 4px rgba(0, 0, 0, 0.25);
+	border: 0.125rem solid rgba(165.00000536441803, 208.0000028014183, 159.0000057220459, 1);
+	box-shadow:0rem 0.25rem 0.25rem rgba(0, 0, 0, 0.25);
 	background-color:rgba(165.00000536441803, 208.0000028014183, 159.0000057220459, 1);
-	width:395px;
-	height:500px;
-	border-top-left-radius:24px;
-	border-top-right-radius:24px;
-	border-bottom-left-radius:24px;
-	border-bottom-right-radius:24px;
+	width:24.688rem;
+	height:31.25rem;
+	border-top-left-radius:1.5rem;
+	border-top-right-radius:1.5rem;
+	border-bottom-left-radius:1.5rem;
+	border-bottom-right-radius:1.5rem;
 	position:relative;
 }
-.e1_3 { 
-	box-shadow:0px 4px 4px rgba(0, 0, 0, 0.25);
-	width:395px;
-	height:296px;
+/* .e1_3 { 
+	box-shadow:0rem 0.25rem 0.25rem rgba(0, 0, 0, 0.25);
+	width:24.688rem;
+	height:18.5rem;
 	position:absolute;
-	left:0px;
-	top:0px;
+	left:0rem;
+	top:0rem;
 	background-image:url(images/onion.png);
 	background-repeat:no-repeat;
 	background-size:cover;
-    border:1px solid rgba(0, 0, 0, 1);
-}
+    border:0.063rem solid rgba(0, 0, 0, 1);
+} */
 
-.e1_4 { 
-	width:200px;
-	height:26px;
+.nombreProducto{ 
+	width:18.75rem;
+	height:1.625rem;
 	position:absolute;
-	left:32px;
-	top:326px;
+	left:2rem;
+	top:20.375rem;
 	font-family:Merriweather;
 	text-align:left;
-	font-size:20px;
+	font-size:1.25rem;
 	letter-spacing:7;
     
 }
-.e1_5 { 
+.precio { 
 	color:rgba(66.00000366568565, 107.00000122189522, 31.000000052154064, 1);
-	width:142px;
-	height:26px;
+	width:8.875rem;
+	height:1.625rem;
 	position:absolute;
-	left:32px;
-	top:360px;
+	left:2rem;
+	top:22.5rem;
 	font-family:Montserrat;
 	text-align:left;
-	font-size:20px;
+	font-size:1.25rem;
 	letter-spacing:0;
 }
-.e1_6 { 
+.decripcion { 
 	color:rgba(109.43750202655792, 109.43750202655792, 109.43750202655792, 1);
-	width:322px;
-	height:21px;
+	width:20.125rem;
+	height:1.313rem;
 	position:absolute;
-	left:32px;
-	top:394px;
+	left:2rem;
+	top:24.625rem;
 	font-family:Montserrat;
 	text-align:left;
-	font-size:16px;
+	font-size:1rem;
 	letter-spacing:0;
 }
-.e1_7 { 
-	width:443px;
-	height:296px;
+.imagenProducto{ 
+	width:27.688rem;
+	height:18.5rem;
 	position:absolute;
-	left:-24px;
-	top:0px;
+	left:-1.5rem;
+	top:0rem;
 }
-.e2_8 { 
+.botonTarjeta { 
 	background-color:rgba(103.0000014603138, 148.000006377697, 54.00000058114529, 1);
-	width:137px;
-	height:47px;
+	width:10.625rem;
+	height:2.938rem;
 	position:absolute;
-	left:129px;
-	top:434px;
+	left:8.063rem;
+	top:27.125rem;
     font-family:Merriweather;
     color: white;
    
     
 }
-.e4_9 { 
-	color:rgba(255, 255, 255, 1);
-	width:106px;
-	height:26px;
-	position:absolute;
-	left:144px;
-	top:445px;
-	font-family:Merriweather;
-	text-align:center;
-	font-size:20px;
-	letter-spacing:0;
-}
+
