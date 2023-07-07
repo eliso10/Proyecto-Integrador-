@@ -11,6 +11,14 @@ border-radius: 1.5rem;
 border: 0.125rem solid #A5D09F;
 background: #A5D09F;
 }
+
+.card2{
+	margin: 1.25rem;	
+	border-radius: 1.5rem;
+	border: 0.125rem solid #A5D09F;
+	background: #A5D09F;
+	}
+
 h1{
     font-family: 'Merriweather', serif;
     color: black;

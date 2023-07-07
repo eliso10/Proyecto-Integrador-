@@ -23,7 +23,7 @@ const createCard = () => {
     const card = document.createElement('div');
     const imgContainer = document.createElement('div');
     const infoContainer = document.createElement('div');
-    card.classList.add('col-sm-4', 'card', 'tarjetaContenedor');
+    card.classList.add('col-sm-4', 'card2', 'tarjetaContenedor');
     imgContainer.classList.add('imagenProducto');
     card.append(imgContainer, infoContainer);
     return card

@@ -9,6 +9,14 @@ body {
     font-size: 0.8rem;
 }
 
+a{
+    color: black;
+}
+
+.Titulo{
+    display: center;
+}
+
 #carrusel {
     margin: 4rem;
 }
@@ -37,4 +45,8 @@ body {
     height: 4rem ;
     width: 4rem ;
     margin-top: 1rem;
+}
+
+#mainContainer{
+    float: right;
 }
