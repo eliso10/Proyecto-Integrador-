@@ -1,0 +1,75 @@
+body {
+    background: #EFE9E7;
+    background: linear-gradient(to right, #EFE9E7, #EFE9E7);
+  }
+  
+  .card-img-left {
+    width: 45%;
+    /* Link to your background image using in the property below! */
+    background: center url('../assets/images/Plantas_reyes_LOGOS-11.png');
+    background-size: contain;
+    background-size: cover;
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+  
+  #mainButtonCancel, #mainButton {
+    font-size: 0.7rem;
+    letter-spacing: 0.05rem;
+    padding: 0.75rem 1rem;
+    background: rgba(103, 148, 54, 0.73);
+    box-shadow: 0rem 0.25rem 0.25rem 0rem rgba(0, 0, 0, 0.25);  
+    font-family: 'Merriweather', serif;
+    margin: auto;
+    border: #679436BA;
+
+  }
+  
+  .btn-google {
+    color: white !important;
+    background-color: #ea4335;
+  }
+  
+  .btn-facebook {
+    color: white !important;
+    background-color: #3b5998;
+  }
+
+  #idContenedorPrincipal{
+    background-color: #EFE9E7;
+    margin: 0%;
+    border: none;
+   
+  }
+
+  #Registrate_titulo{
+    font-family: 'Merriweather', serif;
+    font-size: 2.5rem;
+    
+  }
+
+  .vr{
+    height: 100%;
+    width: .2rem;
+    color: #554111;
+    opacity: .85;
+    float:right;
+    clear:right;
+    margin-left: auto;
+  }
+
+  col-6>input{
+    height: 100%
+    
+    }
+
+  #text_label_Nom_Ape{
+    margin-left: 1rem;
+  }
+
+  .form-control{
+    background: transparent;
+    border: solid #554111;
+  }
+
+  
