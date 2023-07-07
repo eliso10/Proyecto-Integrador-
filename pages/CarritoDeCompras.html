@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Carrito de Compras</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400&display=swap" rel="stylesheet">
@@ -13,7 +13,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@200&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="../styles/CarritoDeCompras.css">
-    <script src="../js/CarritoDecompras.js" async defer></script>
+    <script src="../js/cards.js" async defer></script>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
 </head>
@@ -35,59 +35,62 @@
 
     <!-- seccion de productos -->
     <div class="container-fluid text-center productos">
-        <div class="row">
-            <div class="col-1">
-                <p class="id">
-                    #1
-                </p>
+        <div id="productosVendidos">
+            <div class="row rowProduct">
+                <div class="col-1 item">
+                    <p class="id">
+                        #1
+                    </p>
+                </div>
+                <div class="col-4">
+                    <img src="https://editorialtelevisa.brightspotcdn.com/dims4/default/03eabb0/2147483647/strip/true/crop/1194x672+3+0/resize/1000x563!/quality/90/?url=https%3A%2F%2Fk2-prod-editorial-televisa.s3.amazonaws.com%2Fbrightspot%2Fwp-content%2Fuploads%2F2022%2F07%2Forquidea.jpg"
+                        class="img-thumbnail imagen" alt="imagen de producto">
+                </div>
+                <div class="col-3">
+                    <p class="descripcion">
+                        Orquidea
+                    </p>
+                </div>
+                <div class="col-2">
+                    <p class="cantidad">
+                        1
+                    </p>
+                </div>
+                <div class="col-2">
+                    <p class="precio final">
+                        $650
+                    </p>
+                </div>
             </div>
-            <div class="col-4">
-                <img src="../imagenes/Plantas.jpg" class="img-thumbnail" alt="imagen de producto">
-            </div>
-            <div class="col-3">
-                <p class="descripcion">
-                    nombre del producto
-                </p>
-            </div>
-            <div class="col-2">
-                <p class="cantidad">
-                    1
-                </p>
-            </div>
-            <div class="col-2">
-                <p class="precio final">
-                    $150
-                </p>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-1">
-                <p class="id">
-                    #2
-                </p>
-            </div>
-            <div class="col-4">
-                <img src="../imagenes/Plantas.jpg" class="img-thumbnail" alt="imagen de producto">
-            </div>
-            <div class="col-3">
-                <p class="descripcion">
-                    nombre del producto dos
-                </p>
-            </div>
-            <div class="col-2">
-                <p class="cantidad">
-                    2
-                </p>
-            </div>
-            <div class="col-2">
-                <p class="precio final">
-                    $350
-                </p>
+            <div class="row">
+                <div class="col-1">
+                    <p class="id">
+                        #2
+                    </p>
+                </div>
+                <div class="col-4">
+                    <img src="https://thumbs.dreamstime.com/b/flores-violetas-de-saintpaulia-podridas-plantar-en-maceta-y-herramientas-jard%C3%ADn-para-plantas-macetas-tablas-madera-198059583.jpg" class="img-thumbnail imagen" alt="imagen de producto">
+                </div>
+                <div class="col-3">
+                    <p class="descripcion">
+                    Violeta imperial
+                    </p>
+                </div>
+                <div class="col-2">
+                    <p class="cantidad">
+                        1
+                    </p>
+                </div>
+                <div class="col-2">
+                    <p class="precio final">
+                        $350
+                    </p>
+                </div>
             </div>
         </div>
     </div>
 
-<!--total y pagar -->
+    <!--total y pagar -->
     <div class="row">
         <div class="col-8"></div>
         <div class="col-4">
@@ -101,19 +104,19 @@
             </div>
         </div>
     </div>
-<!--iconos de redes sociales-->
+    <!--iconos de redes sociales-->
     <div class="container-fluid text-center border-0">
         <div class="row border-0">
             <div class="col-4 border-0">
-                <img src="../imagenes/facebook.png" id="iconos-redes" class="img-fluid" alt="facebook">
+                <img src="../assets/icons/facebook.png" id="iconos-redes" class="img-fluid" alt="facebook">
                 facebook
             </div>
             <div class="col-4 border-0">
-                <img src="../imagenes/instagram.png" id="iconos-redes" class="img-fluid" alt="instagram">
+                <img src="../assets/icons/instagram.png " id="iconos-redes" class="img-fluid" alt="instagram">
                 instagram
             </div>
             <div class="col-4 border-0">
-                <img src="../imagenes/linkedin.png" id="iconos-redes" class="img-fluid" alt="linkedin">
+                <img src="../assets/icons/linkedin.png " id="iconos-redes" class="img-fluid" alt="linkedin">
                 linkedin
             </div>
         </div>

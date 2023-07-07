@@ -1,0 +1,377 @@
+// const plantas = require('./data_pruebas');
+//const containerCards = document.getElementById('productosVendidos');//jalo los datos de la pagina de carrito
+
+const plantas = [
+    {
+        id: 1,
+        nombre: "SANSEVIERIA",
+        url: "https://hips.hearstapps.com/hmg-prod/images/plantas-de-interior-resistentes-2-1543351859.jpg?crop=1xw:1xh;center,top&resize=980:*",
+        precio: 14.02,
+        descripcion: "Lorem Ipsum is simply dummy tex",
+    },
+    {
+        id: 2,
+        nombre: "CROTÓ",
+        url: "https://hips.hearstapps.com/hmg-prod/images/garden-croton-or-variegated-croton-euphorbiaceae-news-photo-1670849839.jpg?crop=1xw:1xh;center,top&resize=980:*",
+        precio: 14.02,
+        descripcion: "Lorem Ipsum is simply dummy tex"
+    },
+    {
+        id: 3,
+        nombre: "HELECHO BOSTON otrosss",
+        url: "https://hips.hearstapps.com/hmg-prod/images/helecho-natural-1631189259.png?crop=1xw:1xh;center,top&resize=980:*",
+        precio: 14.02,
+        descripcion: "Lorem Ipsum is simply dummy tex"
+    },
+    {
+        id: 4,
+        nombre: "ECHEVERIA",
+        url: "https://hips.hearstapps.com/hmg-prod/images/echeveria-flower-arrangement-news-photo-1670855481.jpg?crop=1xw:1xh;center,top&resize=980:*",
+        precio: 14.02,
+        descripcion: "Lorem Ipsum is simply dummy tex"
+    },
+    {
+        id: 5,
+        nombre: "ECHEVERIA",
+        url: "https://como-plantar.com/wp-content/uploads/2021/09/cuidar-y-cultivar-Echeveria-Peacockii.jpg.webp",
+        precio: 14.02,
+        descripcion: "Lorem Ipsum is simply dummy tex"
+    },
+    {
+        id: 6,
+        nombre: "Kalanchoe",
+        url: "https://como-plantar.com/wp-content/uploads/2023/01/como-plantar-Flor-de-la-fortuna-o-Kalanchoe.jpg.webp",
+        precio: 14.02,
+        descripcion: "Lorem Ipsum is simply dummy tex"
+    },
+    {
+        id: 7,
+        nombre: "Begonia",
+        url: "https://como-plantar.com/wp-content/uploads/2023/01/cuidados-y-como-plantar-begonias.jpg.webp",
+        precio: 14.02,
+        descripcion: "Lorem Ipsum is simply dummy tex"
+    },
+    {
+        id: 8,
+        nombre: "Cactus mini",
+        url: "https://como-plantar.com/wp-content/uploads/2021/09/cultivar-y-cuidar-cactus-oreja-de-conejo.jpg.webp",
+        precio: 14.02,
+        descripcion: "Lorem Ipsum is simply dummy tex"
+    },
+    {
+        id: 9,
+        nombre: "Mini rosa",
+        url: "https://como-plantar.com/wp-content/uploads/2023/02/plantar-cuidar-rosas-de-pitimini-o-rosal-minirosas-de-pitimini-o-rosal-mini.jpg.webp",
+        precio: 14.02,
+        descripcion: "Lorem Ipsum is simply dummy tex"
+    },
+    {
+        id: 10,
+        nombre: "Peperomía",
+        url: "https://como-plantar.com/wp-content/uploads/2023/03/cuidados-y-como-plantar-peperomia.jpg.webp",
+        precio: 14.02,
+        descripcion: "Lorem Ipsum is simply dummy tex"
+    },
+    {
+        id: 11,
+        nombre: "Palma Areca",
+        url: "https://i0.wp.com/plantify.mx/wp-content/uploads/2021/10/Palma-Areca-Gd.jpg?fit=1080%2C1080&ssl=1",
+        precio: 250.00,
+        descripcion: "planta de interior excelente para dar vida a tu sala",
+    },
+    {
+        id: 12,
+        nombre: "Muñeca",
+        url: "https://hagearbeider.com/wp-content/uploads/2021/02/1612526530_480_Omsorg-for-den-vakre-cordyline-tango.jpg",
+        precio: 240.00,
+        descripcion: "Planta de sombra da color a tus espacios con su tonalidad llamativa"
+    },
+    {
+        id: 13,
+        nombre: "Orquideas",
+        url: "https://editorialtelevisa.brightspotcdn.com/dims4/default/03eabb0/2147483647/strip/true/crop/1194x672+3+0/resize/1000x563!/quality/90/?url=https%3A%2F%2Fk2-prod-editorial-televisa.s3.amazonaws.com%2Fbrightspot%2Fwp-content%2Fuploads%2F2022%2F07%2Forquidea.jpg",
+        precio: 750.00,
+        descripcion: "Una planta que resalta por su elegancia y belleza excelente para mostrarla en tu casa o en tu oficina",
+    },
+    {
+        id: 14,
+        nombre: "Cala",
+        url: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTbKnbQkbQ3Mxz15xR8g-Qt3X4M4BsifaLfJA&usqp=CAU",
+        precio: 350.00,
+        descripcion: "Planta de semisombra con colores llamativos apta para tu coleccion"
+    },
+    {
+        id: 15,
+        nombre: "Anturio",
+        url: "https://www.elmueble.com/medio/2022/05/17/lilac-anturio_9317cc4d_674x674.jpeg",
+        precio: 550.00,
+        descripcion: "planta de interior con una variedad de colores es una opcion excelente para dar vida a tu hogar ",
+    },
+    {
+        id: 16,
+        nombre: "Violeta ",
+        url: "https://thumbs.dreamstime.com/b/flores-violetas-de-saintpaulia-podridas-plantar-en-maceta-y-herramientas-jard%C3%ADn-para-plantas-macetas-tablas-madera-198059583.jpg",
+        precio: 240.00,
+        descripcion: "Planta de luz interior una excelente opcion si lo que buscas es tener una planta resistente y con mucho color"
+    },
+
+    //macetas
+    {
+        id: 1,
+        nombre: "Esfera Barro",
+        url: "https://i0.wp.com/plantify.mx/wp-content/uploads/2021/10/Esfera-chica-barro.jpg?resize=300%2C300&ssl=1",
+        precio: 250.00,
+        descripcion: "Esta es una maceta que resalta mucho con tus plantas mas llamativas",
+    },
+    {
+        id: 2,
+        nombre: "Taza Barro",
+        url: "https://i0.wp.com/plantify.mx/wp-content/uploads/2021/10/Taza-chica.jpg?resize=300%2C300&ssl=1",
+        precio: 200.00,
+        descripcion: "Una maceta minimalista para tus plantas"
+    },
+    {
+        id: 3,
+        nombre: "Esfera Ceramica",
+        url: "https://i0.wp.com/plantify.mx/wp-content/uploads/2021/10/esfera-grande-fibra.jpg?resize=300%2C300&ssl=1",
+        precio: 450.00,
+        descripcion: "Una maceta perfecta para resaltar tus plantas ",
+    },
+    {
+        id: 4,
+        nombre: "Cubo Ceramica",
+        url: "https://i0.wp.com/plantify.mx/wp-content/uploads/2021/10/cubo-grande-fibra.jpg?resize=300%2C300&ssl=1",
+        precio: 550.00,
+        descripcion: "Una maceta muy elegante para tus mejores plantas"
+    },
+    {
+        id: 5,
+        nombre: "Jardinera Barro",
+        url: "https://i0.wp.com/plantify.mx/wp-content/uploads/2021/10/Jardinera-Barro-1.jpg?resize=300%2C300&ssl=1",
+        precio: 250.00,
+        descripcion: "Jardinera de barro para los minimalistas",
+    },
+    {
+        id: 6,
+        nombre: "Jardinera Fibra de Vidrio ",
+        url: "https://i0.wp.com/plantify.mx/wp-content/uploads/2021/10/jardinera-fibra.jpg?resize=600%2C600&ssl=1",
+        precio: 530.00,
+        descripcion: "Jardinera elaborada con fibra de vidrio color negro"
+    },
+    //productos
+    {
+        id: 1,
+        nombre: "Fertilizante Nitrofosca 1kg",
+        url: "https://elheraldodemartinez.com.mx/images/Articulos2018/Articulo/2020/011Noviembre/28Nov/PAG-3-PRINCIPAL.png",
+        precio: 250.00,
+        descripcion: "Este fertilizante ayudara a que tu planta crezca y tenga brotes nuevos",
+    },
+    {
+        id: 2,
+        nombre: "Fertilizante Florifil 1kg",
+        url: "https://agropos.com.br/wp-content/uploads/2022/03/Fertilizante-Para-Planta.jpg",
+        precio: 250.00,
+        descripcion: "Este fertilizante ayudara a que tus plantas que dan flores tengan aun mas"
+    },
+    {
+        id: 3,
+        nombre: "Sistema de Reigo",
+        url: "https://m.media-amazon.com/images/I/812q2D0i3sL._AC_UF1000,1000_QL80_.jpg",
+        precio: 950.00,
+        descripcion: "Es un sistema que te permitira regar de manera facil y sencilla hasta 30m de distancia",
+    },
+    {
+        id: 4,
+        nombre: "Kit de Herramientas",
+        url: "https://as2.ftcdn.net/v2/jpg/02/65/10/51/1000_F_265105182_1kHISR3wzXYeADjOmnhU8lLvd6EyNxuE.jpg",
+        precio: 550.00,
+        descripcion: "Todo lo que necesitas para dar mantenimiento a tus preciadas plantas"
+    },
+    {
+        id: 5,
+        nombre: "Cinturon de Cuero",
+        url: "https://www.elblogdelatabla.com/wp-content/uploads/2020/11/cinturon-jardineria-herramientas-mano-florista-cuero-merifaLeather.jpg",
+        precio: 450.00,
+        descripcion: "Vuelve mas facil tu trabajo en la jardineria con ayuda de este cinturon perecto para tus herramientas",
+    },
+    {
+        id: 6,
+        nombre: "Manguera de Riego ",
+        url: "https://plasticforte.com/wp-content/uploads/2022/06/accesorios-jardineria-plasticforte.jpg",
+        precio: 500.00,
+        descripcion: "Para que tus plantas queden perfectamente regadas utiliza nuestra manguera con soporte a pared"
+    },
+
+
+
+]
+
+// const getPlantas = () => {
+//     return plantas;
+// }
+
+// const getPlanta = id => {
+//     return plantas.find(plantas => plantas.id === id)
+// }
+
+// console.log(getPlantas());
+// console.log(getPlanta(1));
+
+
+
+
+const createCard = () => {
+    const card = document.createElement('div');
+    const imgContainer = document.createElement('div');
+    const infoContainer = document.createElement('div');
+    card.classList.add('col-sm-4', 'card', 'tarjetaContenedor');
+    infoContainer.classList.add("infoContainer");
+    imgContainer.classList.add('imagenProducto');
+
+    card.append(imgContainer, infoContainer);
+    return card
+}
+
+const createDescription = () => {
+    const elementsPlant = {
+        nombre: document.createElement('h1'),
+        descripcion: document.createElement('p'),
+        precio: document.createElement('p'),
+        button: document.createElement('button'),
+    }
+
+    return elementsPlant;
+}
+
+
+const populateElements = (infoPlantas, planta) => {
+    infoPlantas.nombre.textContent = planta.nombre;
+    infoPlantas.descripcion.textContent = planta.descripcion;
+    infoPlantas.precio.textContent = "$" + planta.precio + " / pesos";
+    infoPlantas.button.textContent = "Al Carrito";
+    infoPlantas.nombre.classList.add("nombreProducto");
+    infoPlantas.precio.classList.add("precio");
+    infoPlantas.descripcion.classList.add("decripcion");
+
+    infoPlantas.button.classList.add("botonTarjeta");
+
+    return infoPlantas;
+}
+
+const renderElements = (elements, card, planta) => {
+    const img = document.createElement('img');
+    img.src = planta.url;
+    img.classList.add('img-fluid');
+    img.alt = "Responsive image";
+
+    card.children[0].append(img);
+    card.children[1].append(elements.nombre, elements.descripcion, elements.precio, elements.button);
+}
+
+
+plantas.forEach(planta => {
+    const card = createCard();
+    const elementsPlant = createDescription();
+    const populatedElements = populateElements(elementsPlant, planta);
+    renderElements(populatedElements, card, planta);
+    containerCards.appendChild(card);
+});
+///renderizar en paguina carrito  funcion de max nueva
+var carrito =[
+    {
+        id: 1,
+        nombre: "Fertilizante Nitrofosca 1kg",
+        url: "https://elheraldodemartinez.com.mx/images/Articulos2018/Articulo/2020/011Noviembre/28Nov/PAG-3-PRINCIPAL.png",
+        precio: 250.00,
+        descripcion: "Este fertilizante ayudara a que tu planta crezca y tenga brotes nuevos",
+    },
+    {
+        id: 2,
+        nombre: "Fertilizante Florifil 1kg",
+        url: "https://agropos.com.br/wp-content/uploads/2022/03/Fertilizante-Para-Planta.jpg",
+        precio: 250.00,
+        descripcion: "Este fertilizante ayudara a que tus plantas que dan flores tengan aun mas"
+    },
+    {
+        id: 3,
+        nombre: "Sistema de Reigo",
+        url: "https://m.media-amazon.com/images/I/812q2D0i3sL._AC_UF1000,1000_QL80_.jpg",
+        precio: 950.00,
+        descripcion: "Es un sistema que te permitira regar de manera facil y sencilla hasta 30m de distancia",
+    },
+]
+carrito.forEach(compra => {
+
+var node_1 = document.createElement('DIV');
+node_1.setAttribute('class', 'row rowProduct');
+
+var node_2 = document.createElement('DIV');
+node_2.setAttribute('class', 'col-1 item');
+node_1.appendChild(node_2);
+
+var node_3 = document.createElement('P');
+node_3.setAttribute('class', 'id');
+node_2.appendChild(node_3);
+node_3.textContent = compra.id;
+
+var node_4 = document.createTextNode((new String("\\n #1\\n ")));
+node_3.appendChild(node_4);
+
+var node_5 = document.createElement('DIV');
+node_5.setAttribute('class', 'col-4');
+node_1.appendChild(node_5);
+
+var node_6 = document.createElement('IMG');
+node_6.setAttribute('src', compra.url);
+node_6.setAttribute('class', 'img-thumbnail');
+node_6.setAttribute('alt', 'imagen de producto');
+node_5.appendChild(node_6);
+
+var node_7 = document.createElement('DIV');
+node_7.setAttribute('class', 'col-3');
+node_1.appendChild(node_7);
+
+var node_8 = document.createElement('P');
+node_8.setAttribute('class', 'descripcion');
+node_7.appendChild(node_8);
+node_8.textContent = compra.nombre; 
+
+var node_9 = document.createTextNode((new String("\\nnombre del producto\\n ")));
+node_8.appendChild(node_9);
+
+var node_10 = document.createElement('DIV');
+node_10.setAttribute('class', 'col-2');
+node_1.appendChild(node_10);
+
+var node_11 = document.createElement('P');
+node_11.setAttribute('class', 'cantidad');
+node_10.appendChild(node_11);
+node_11.textContent = " ";
+
+var node_12 = document.createTextNode((new String("\\n1\\n ")));
+node_11.appendChild(node_12);
+
+var node_13 = document.createElement('DIV');
+node_13.setAttribute('class', 'col-2');
+node_1.appendChild(node_13);
+
+var node_14 = document.createElement('P');
+node_14.setAttribute('class', 'precio final');
+node_13.appendChild(node_14);
+node_14.textContent = compra.precio;
+
+});
+
+
+
+
+// //extrayendo de la pagina del catalogo
+// const datosCarrito = document.querySelectorAll(".infoContainer");//botonTarjeta
+// const botonCompra = document.querySelectorAll(".botonTarjeta");
+// //console.log(datosCarrito)
+// //console.log(botonCompra)
+// //evento de clcic boton
+// botonCompra.forEach(boton => {
+//     boton.addEventListener('click', () => {
+
+//     }))
