@@ -204,9 +204,8 @@ var herramientas =[
     },
 ]
 
-
-
-//carrito = [];
+carrito =[
+];
 
 //Buscar elementos en la BD de herramientas
 function buscarHerramientas(idHerramienta){
@@ -260,3 +259,4 @@ console.log(herramientas);
 export {plantas}; 
 export {macetas}; 
 export {herramientas};
+export {carrito};
