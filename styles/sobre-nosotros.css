@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@900&family=Montserrat:wght@500&display=swap');
+
+body {
+    background-color: #EFE9E7;
+    
+    }
+
+#sobreNosotros {
+    font-family: 'Merriweather', serif;
+    align-items: center;
+    background-color: #A5D09F;
+    height: 150px;
+    text-align:center;
+    color: #815636;
+    
+}
+
+#about-us{
+    margin-top: 57px;
+    
+}
+
+
+.misionVision{
+    margin: 1.8rem;
+}
+
+.contenedor-texto{
+    background-color: #EFE9E7;
+    
+
+}
+
+.titles {
+    font-family: 'Merriweather', serif;
+    color: #815636;
+    
+}
+
+p {
+    font-family: 'Montserrat', sans-serif;
+    color: black;
+}
+
+
+#titulos {
+    font-family: 'Merriweather', serif;
+    color: #815636;
+    text-align:center;
+}
+
+#texto{
+    font-family: 'Montserrat', sans-serif;
+    color: black;
+    text-align:center;
+}
+
+#cuerpo{
+    background-color: #A5D09F;
+    border-color: #EFE9E7;
+    margin: auto;
+}
+
