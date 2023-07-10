@@ -6,7 +6,7 @@ body {
   .card-img-left {
     width: 45%;
     /* Link to your background image using in the property below! */
-    background: center url('../assets/images/Plantas_reyes_LOGOS-11.png');
+    background: center url('/assets/images/Plantas_reyes_LOGOS-11.png');
     background-size: contain;
     background-size: cover;
     background-size: contain;
@@ -18,7 +18,7 @@ body {
     letter-spacing: 0.05rem;
     padding: 0.75rem 1rem;
     background: rgba(103, 148, 54, 0.73);
-    box-shadow: 0rem 0.25rem 0.25rem 0rem rgba(0, 0, 0, 0.25);  
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);  
     font-family: 'Merriweather', serif;
     margin: auto;
     border: #679436BA;
@@ -39,7 +39,6 @@ body {
     background-color: #EFE9E7;
     margin: 0%;
     border: none;
-   
   }
 
   #Registrate_titulo{
