@@ -9,17 +9,73 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@700&family=Style+Script&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../styles/contactanos.css">
+    <link rel="stylesheet" href="../styles/Navbar.css">
     <title></title>
 </head>
 <body>
+<!--NAvbatr-->
+<nav class="navbar navbar-expand-lg">
+    <div class="container-fluid">
+      <img class="rounded-circle" src="../assets/images/logoNavbar.png" width="60rem" alt="Plantas Reyes" />
+      <a class="title" href="linpagina inicial">
+        <h4>Plantas Reyes</h4>
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
 
-    <div class="container">
+      <div class="collapse navbar-collapse font-navbar" id="navbarNav">
+        <ul class="navbar-nav">
 
-        
+          <li class="nav-item">
+            <a class="nav-link" href="./">Catalogo de Productos</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./">Proyectos a Medida</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./">Contactanos</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="./">Carrito de Compras</a>
+          </li>
+
+          <li class="nav-item">
+          <li class="nav-item">
+            <a class="nav-link" href="./link carrito" id="carritoIcon">
+              <img src="../assets/icons/iconoCarrito.png" id="iconoCarrito" alt="iconoCarrito">
+            </a>
+          </li>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Iniciar Sesion
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="./link ingresa a tu cuenta">Ingresa a tu cuenta</a></li>
+
+              <li>
+                <a class="dropdown-item" href="./link registrate">Registrate</a>
+              </li>
+
+            </ul>
+          </li>
+
+      </div>
+    </div>
+  </nav>
+
+
+
+
+<!--contenedores-->
+    <div class="container-flui">
         <div class="card-fluid" style="max-width: 100vw;">
             <div class="row g-0">
                 <div class="col-md-2">
-                    <img src="../assets/images/logo.png" class="img-fluid rounded-start" alt="logo" id="logoPrincipal">
+                    <img src="../assets/images/logo.png" class="img-fluid" alt="logo" id="logoPrincipal">
                 </div>
                 <div class="col-md-10 divPrincipal">
                     <div class="card-body divPrincipal">
