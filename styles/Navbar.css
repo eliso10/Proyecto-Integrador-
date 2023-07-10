@@ -1,0 +1,41 @@
+#navbarNav,
+.container-fluid {
+  justify-content: center;
+  align-items: center;
+  text-align: end;
+  background-color: #679436;
+
+}
+
+.title {
+  margin-left: 1rem;
+  color: rgb(235, 243, 235);
+  font-family: 'Merriweather', serif;
+  text-decoration: none;
+ margin-right: 5rem;
+
+}
+
+.title:hover {
+  color: #554111;
+}
+
+#iconoCarrito{
+  width: 2rem;
+  height: 2rem;
+}
+.navbar {
+
+  padding: 0;
+
+}
+
+.nav-link {
+  font-family: 'Montserrat', sans-serif;
+  font-size: medium;
+
+}
+
+.nav-link:hover {
+  color: #EFE9E7;
+}
