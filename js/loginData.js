@@ -1,11 +1,11 @@
 const inputEmail = document.getElementById('floatingInputEmail');
 const inputPassword = document.getElementById('floatingPassword');
-const form = document.getElementById('logIn');
-const loginButton = document.getElementById('mainButton');
 
+const form = document.getElementById('logIn');
 //regex
-const regexEmail = /^[\w.+\-]+@gmail\.com$/;
+const regexEmail = /^.+@[^@]+\.[^@]{2,}$/;
 const regexPassword = /^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[a-zA-Z]).{8,}$/;
+//^[A-Za-z0-9._+-]+@gmail\\.com$
 
     //poblar alert
 const alertPlaceholder = document.getElementById('liveAlertPlaceholder')
@@ -33,9 +33,7 @@ form.addEventListener('submit',(event)=>{
     console.log(JSON.stringify(allData));
 
     //Enviar a la pagina de inicio si se inicia sesion exitosamente
-    loginButton.addEventListener('click', function() {
       window.location.href = '../index.html';
-  });
 
   } else if(!regexPassword.test(inputPassword.value) && !regexEmail.test(inputEmail.value)){
     
