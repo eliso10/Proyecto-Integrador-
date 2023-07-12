@@ -1,7 +1,7 @@
 /*todo esto corresponde a los estilos del Navbar*/
 #navbarNav,
-.container-fluid {
-  justify-content: center;
+#navbar-container {
+  justify-content: right;
   align-items: center;
   text-align: end;
   background-color: #679436;
@@ -10,21 +10,18 @@
 
 .title {
   margin-left: 1rem;
-  color: rgb(235, 243, 235);
+  color: rgb(29, 26, 26);
   font-family: 'Merriweather', serif;
   text-decoration: none;
- margin-right: 5rem;
-
+  margin-right: 5rem;
+  margin-top: 0.5rem;
 }
 
-.title:hover {
-  color: #554111;
-}
-
-#iconoCarrito{
+#iconoCarrito {
   width: 2rem;
   height: 2rem;
 }
+
 .navbar {
 
   padding: 0;
@@ -34,10 +31,25 @@
 .nav-link {
   font-family: 'Montserrat', sans-serif;
   font-size: medium;
+  margin-top: 0.5rem;
+  color: black;
 
 }
 
-.nav-link:hover {
+.nav-link:hover,
+.title:hover {
   color: #EFE9E7;
 }
+
+#footer {
+  background-color: #A5D09F;
+
+}
+
+#iconos-redes {
+  height: 4rem;
+  width: 4rem;
+  margin-top: 1rem;
+}
+
 /*hasta aqui terminan los estilos del navbar*/
