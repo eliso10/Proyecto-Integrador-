@@ -14,7 +14,7 @@
 </head>
 <body>
 
-    <!-- Navbar -->
+    <!-- Inicia Navbar -->
   <nav class="navbar navbar-expand-lg">
     <div class="container-fluid">
       <img class="rounded-circle" src="../assets/images/logoNavbar.png" width="60rem" alt="Plantas Reyes" />
@@ -86,32 +86,16 @@
                         <div class="form-floating mb-3">
                             <input type="email" name="E-mail" pattern="[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?" class="form-control" id="floatingInputEmail" placeholder="name@example.com" required>
                             <label for="floatingInputEmail">Correo Electronico</label>
-                            <div class="valid-feedback">
-                                ¡Genial!
-                            </div>
-                            <div class="invalid-feedback">
-                                Introduce un correo electrónico válido: name@gmail.com
-                            </div>
-                        </div>
             
                         <hr>
             
                         <div class="form-floating mb-3">
                             <input type="password" name="Contraseña" pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[a-zA-Z]).{8,}$" class="form-control" id="floatingPassword" placeholder="Password" required>
                             <label for="floatingPassword">Contraseña</label>
-                            <div class="valid-feedback">
-                                ¡Genial!
-                            </div>
-                            <div class="invalid-feedback">
-                                Recuerda que la contraseña son minimo 8 caracteres con al menos 1 número, 1 símbolo, 1 mayúsucula y 1 minúscula.
-                            </div>
                         </div>
             
-                        <!-- <div class="form-floating mb-3">
-                            <input type="password" class="form-control" id="floatingPasswordConfirm" placeholder="Confirm Password">
-                            <label for="floatingPasswordConfirm">Confirma Contraseña</label>
-                        </div> -->
-            
+                        <div id="liveAlertPlaceholder"></div>
+                        
                         <div class="d-grid mb-2">
                             <div class="row">
                                 <button class="btn btn-primary btn-login fw-bold text-uppercase col-5" type="reset" id="mainButtonCancel">Cancelar</button>
