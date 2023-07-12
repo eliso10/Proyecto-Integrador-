@@ -1,4 +1,4 @@
-const mainContainer = document.getElementById('elementosCarritos');
+const mainContainerTarjetas = document.getElementById('elementosCarritos');
 
 var carrito =[
     {
@@ -7,13 +7,15 @@ var carrito =[
         url: "https://elheraldodemartinez.com.mx/images/Articulos2018/Articulo/2020/011Noviembre/28Nov/PAG-3-PRINCIPAL.png",
         precio: 250.00,
         descripcion: "Este fertilizante ayudara a que tu planta crezca y tenga brotes nuevos",
+        cantidad: 1,
     },
     {
         id: 2,
         nombre: "Fertilizante Florifil 1kg",
         url: "https://agropos.com.br/wp-content/uploads/2022/03/Fertilizante-Para-Planta.jpg",
         precio: 250.00,
-        descripcion: "Este fertilizante ayudara a que tus plantas que dan flores tengan aun mas"
+        descripcion: "Este fertilizante ayudara a que tus plantas que dan flores tengan aun mas Este fertilizante ayudara a que tu planta crezca y tenga brotes nuevos",
+        cantidad: 1,
     },
     {
         id: 3,
@@ -21,187 +23,161 @@ var carrito =[
         url: "https://m.media-amazon.com/images/I/812q2D0i3sL._AC_UF1000,1000_QL80_.jpg",
         precio: 950.00,
         descripcion: "Es un sistema que te permitira regar de manera facil y sencilla hasta 30m de distancia",
+        cantidad: 1,
     },
 ]
+//Función principal para la creación y renderización del carrito. 
+const RenderCarrito = () => {
 
 carrito.forEach(compra => {
-    var node_1 = document.createElement('DIV');
-    node_1.setAttribute('class', 'row p-2 bg-white border rounded');
-    node_1.setAttribute('id', 'itemComp');
     
-    var node_2 = document.createElement('DIV');
-    node_2.setAttribute('class', 'col-md-3 mt-1');
-    node_1.appendChild(node_2);
-    
-    var node_3 = document.createElement('IMG');
-    node_3.setAttribute('class', 'img-fluid img-responsive rounded product-image');
-    node_3.setAttribute('src', 'https://como-plantar.com/wp-content/uploads/2021/09/cultivar-y-cuidar-cactus-oreja-de-conejo.jpg.webp');
-    node_2.appendChild(node_3);
-    
-    var node_4 = document.createElement('DIV');
-    node_4.setAttribute('class', 'col-md-6 mt-1');
-    node_1.appendChild(node_4);
-    
-    var node_5 = document.createElement('H5');
-    node_4.appendChild(node_5);
-    
-    var node_6 = document.createTextNode((new String("Cactus mini")));
-    node_5.appendChild(node_6);
-    
-    var node_7 = document.createElement('DIV');
-    node_7.setAttribute('class', 'd-flex flex-row');
-    node_4.appendChild(node_7);
-    
-    var node_8 = document.createElement('DIV');
-    node_8.setAttribute('class', 'ratings mr-2');
-    node_7.appendChild(node_8);
-    
-    var node_9 = document.createElement('I');
-    node_9.setAttribute('class', 'fa fa-star');
-    node_8.appendChild(node_9);
-    
-    var node_10 = document.createElement('I');
-    node_10.setAttribute('class', 'fa fa-star');
-    node_8.appendChild(node_10);
-    
-    var node_11 = document.createElement('I');
-    node_11.setAttribute('class', 'fa fa-star');
-    node_8.appendChild(node_11);
-    
-    var node_12 = document.createElement('I');
-    node_12.setAttribute('class', 'fa fa-star');
-    node_8.appendChild(node_12);
-    
-    var node_13 = document.createElement('SPAN');
-    node_7.appendChild(node_13);
-    
-    var node_14 = document.createTextNode((new String("310")));
-    node_13.appendChild(node_14);
-    
-    var node_15 = document.createElement('DIV');
-    node_15.setAttribute('class', 'mt-1 mb-1 spec-1');
-    node_4.appendChild(node_15);
-    
-    var node_16 = document.createElement('SPAN');
-    node_15.appendChild(node_16);
-    
-    var node_17 = document.createTextNode((new String("Interios/Exterior")));
-    node_16.appendChild(node_17);
-    
-    var node_18 = document.createElement('SPAN');
-    node_18.setAttribute('class', 'dot');
-    node_15.appendChild(node_18);
-    
-    var node_19 = document.createElement('SPAN');
-    node_15.appendChild(node_19);
-    
-    var node_20 = document.createTextNode((new String("Pequeña")));
-    node_19.appendChild(node_20);
-    
-    var node_21 = document.createElement('SPAN');
-    node_21.setAttribute('class', 'dot');
-    node_15.appendChild(node_21);
-    
-    var node_22 = document.createElement('SPAN');
-    node_15.appendChild(node_22);
-    
-    var node_23 = document.createTextNode((new String("Elegante")));
-    node_22.appendChild(node_23);
-    
-    var node_24 = document.createElement('BR');
-    node_22.appendChild(node_24);
-    
-    var node_25 = document.createElement('DIV');
-    node_25.setAttribute('class', 'mt-1 mb-1 spec-1');
-    node_4.appendChild(node_25);
-    
-    var node_26 = document.createElement('SPAN');
-    node_25.appendChild(node_26);
-    
-    var node_27 = document.createTextNode((new String("Diseño Unico")));
-    node_26.appendChild(node_27);
-    
-    var node_28 = document.createElement('SPAN');
-    node_28.setAttribute('class', 'dot');
-    node_25.appendChild(node_28);
-    
-    var node_29 = document.createElement('SPAN');
-    node_25.appendChild(node_29);
-    
-    var node_30 = document.createTextNode((new String("Casa")));
-    node_29.appendChild(node_30);
-    
-    var node_31 = document.createElement('SPAN');
-    node_31.setAttribute('class', 'dot');
-    node_25.appendChild(node_31);
-    
-    var node_32 = document.createElement('SPAN');
-    node_25.appendChild(node_32);
-    
-    var node_33 = document.createTextNode((new String("Oficina")));
-    node_32.appendChild(node_33);
-    
-    var node_34 = document.createElement('BR');
-    node_32.appendChild(node_34);
-    
-    var node_35 = document.createElement('P');
-    node_35.setAttribute('class', 'text-justify text-truncate para mb-0');
-    node_4.appendChild(node_35);
-    
-    var node_36 = document.createElement('BR');
-    node_35.appendChild(node_36);
-    
-    var node_37 = document.createElement('BR');
-    node_35.appendChild(node_37);
-    
-    var node_38 = document.createElement('DIV');
-    node_38.setAttribute('class', 'align-items-center align-content-center col-md-3 border-left mt-1');
-    node_1.appendChild(node_38);
-    
-    var node_39 = document.createElement('DIV');
-    node_39.setAttribute('class', 'd-flex flex-row align-items-center');
-    node_38.appendChild(node_39);
-    
-    var node_40 = document.createElement('H4');
-    node_40.setAttribute('class', 'mr-1');
-    node_39.appendChild(node_40);
-    
-    var node_41 = document.createTextNode((new String("$13.99")));
-    node_40.appendChild(node_41);
-    
-    var node_42 = document.createElement('SPAN');
-    node_42.setAttribute('class', 'strike-text');
-    node_39.appendChild(node_42);
-    
-    var node_43 = document.createTextNode((new String("$20.99")));
-    node_42.appendChild(node_43);
-    
-    var node_44 = document.createElement('H6');
-    node_44.setAttribute('class', 'text-success');
-    node_38.appendChild(node_44);
-    
-    var node_45 = document.createTextNode((new String("Free shipping")));
-    node_44.appendChild(node_45);
-    
-    var node_46 = document.createElement('DIV');
-    node_46.setAttribute('class', 'd-flex flex-column mt-4');
-    node_38.appendChild(node_46);
-    
-    var node_47 = document.createElement('BUTTON');
-    node_47.setAttribute('class', 'btn btn-primary btn-sm');
-    node_47.setAttribute('type', 'button');
-    node_46.appendChild(node_47);
-    
-    var node_48 = document.createTextNode((new String("Borrar")));
-    node_47.appendChild(node_48);
-    
-    var node_49 = document.createElement('BUTTON');
-    node_49.setAttribute('class', 'btn btn-outline-primary btn-sm mt-2');
-    node_49.setAttribute('type', 'button');
-    node_46.appendChild(node_49);
-    
-    var node_50 = document.createTextNode((new String("Añadir Detalle")));
-    node_49.appendChild(node_50);
+var mainContainer = document.createElement('DIV');
+mainContainer.setAttribute('class', 'row p-2 bg border rounded itemComp align-items-center');
 
-    mainContainer.appendChild(node_1);
+var imagenContainer = document.createElement('DIV');
+imagenContainer.setAttribute('class', 'col-md-3 mt-1');
+mainContainer.appendChild(imagenContainer);
+
+var imagenProduct = document.createElement('IMG');
+imagenProduct.setAttribute('class', 'img-fluid img-responsive rounded product-image');
+imagenProduct.setAttribute('src', compra.url);
+imagenContainer.appendChild(imagenProduct);
+
+var dataContainer = document.createElement('DIV');
+dataContainer.setAttribute('class', 'col-md-6 mt-1 row informacion');
+mainContainer.appendChild(dataContainer);
+
+var titulo = document.createElement('H5');
+titulo.setAttribute('class', 'd-flex justify-content-start NombreTarjeta');
+dataContainer.appendChild(titulo);
+titulo.textContent = compra.nombre;
+
+
+
+// var node_7 = document.createElement('DIV');
+// node_7.setAttribute('class', ' d-flex justify-content-start mt-1 mb-1 spec-1');
+// dataContainer.appendChild(node_7);
+
+// var node_8 = document.createElement('SPAN');
+// node_7.appendChild(node_8);
+
+// var node_9 = document.createTextNode((new String("Diseño Unico")));
+// node_8.appendChild(node_9);
+
+// var punto1 = document.createElement('SPAN');
+// punto1.setAttribute('class', 'dot');
+// node_7.appendChild(punto1);
+
+// var node_11 = document.createElement('SPAN');
+// node_7.appendChild(node_11);
+
+// var node_12 = document.createTextNode((new String("Casa")));
+// node_11.appendChild(node_12);
+
+// var punto2 = document.createElement('SPAN');
+// punto2.setAttribute('class', 'dot');
+// node_7.appendChild(punto2);
+
+// var node_14 = document.createElement('SPAN');
+// node_7.appendChild(node_14);
+
+// var node_15 = document.createTextNode((new String("Oficina")));
+// node_14.appendChild(node_15);
+
+
+
+
+var descripcionGeneral = document.createElement('P');
+descripcionGeneral.setAttribute('class', 'justify-content-start text-justify para mb-0');
+descripcionGeneral.textContent = compra.descripcion;
+dataContainer.appendChild(descripcionGeneral);
+
+// var divisionContainer = document.createElement('DIV');
+// divisionContainer.setAttribute('class', 'd-flex justify-content-end col-md-1');
+// divisionContainer.setAttribute('style', 'height: 200px; width: 25px;');
+// mainContainer.appendChild(divisionContainer);
+
+// var barraDivisora = document.createElement('DIV');
+// barraDivisora.setAttribute('class', 'vr');
+// barraDivisora.setAttribute('style', 'width: .3rem;');
+// divisionContainer.appendChild(barraDivisora);
+
+var containerDerecho = document.createElement('DIV');
+containerDerecho.setAttribute('class', 'align-items-center align-content-center col-md-3 border-left mt-1 row');
+mainContainer.appendChild(containerDerecho);
+
+var containerMoney = document.createElement('DIV');
+containerMoney.setAttribute('class', 'd-flex flex-row justify-content-center');
+containerDerecho.appendChild(containerMoney);
+
+var precio = document.createElement('H1');
+precio.setAttribute('class', 'mr-1');
+precio.textContent = "$"+compra.precio
+containerMoney.appendChild(precio);
+
+
+var envioH6 = document.createElement('H6');
+envioH6.setAttribute('class', 'text-success');
+envioH6.textContent = "costo de envió adicional."
+containerDerecho.appendChild(envioH6);
+
+
+var buttonsContainer = document.createElement('DIV');
+buttonsContainer.setAttribute('class', 'd-flex flex-column mt-4');
+containerDerecho.appendChild(buttonsContainer);
+
+var buttonBorrar = document.createElement('BUTTON');
+buttonBorrar.setAttribute('class', 'btn btn-primary btn-sm');
+buttonBorrar.setAttribute('type', 'button');
+buttonBorrar.textContent = "Eliminar del Carrito"
+buttonsContainer.appendChild(buttonBorrar);
+
+
+var buttonsContainer2 = document.createElement('DIV');
+buttonsContainer2.setAttribute('class', 'row justify-content-around');
+buttonsContainer.appendChild(buttonsContainer2);
+
+var buttonAñadir = document.createElement('BUTTON');
+buttonAñadir.setAttribute('class', 'btn  btn-primary btn-sm col-5 mt-2');
+buttonAñadir.setAttribute('type', 'button');
+buttonAñadir.textContent = "Añadir";
+buttonsContainer2.appendChild(buttonAñadir);
+
+var buttonRestar = document.createElement('BUTTON');
+buttonRestar.setAttribute('class', 'btn  btn-primary btn-sm col-5 mt-2');
+buttonRestar.setAttribute('type', 'button');
+buttonRestar.textContent = "Restar",
+buttonsContainer2.appendChild(buttonRestar);
+
+
+mainContainerTarjetas.appendChild(mainContainer);
 });
+
+}
+
+
+const eliminarProducto = (id) => {
+    const foundId = carrito.find((element) => element.id === id);
+  
+    console.log(foundId);
+  
+    carrito = carrito.filter((carritoId) => {
+      return carritoId !== foundId;
+    });
+  
+  };
+
+
+//   restar.addEventListener("click", () => {
+//     if (product.cantidad !== 1) {
+//       product.cantidad--;
+//     }
+//   });
+
+
+//   let sumar = carritoContent.querySelector(".sumar");
+//   sumar.addEventListener("click", () => {
+//     product.cantidad++;
+//   });
+
+  RenderCarrito();

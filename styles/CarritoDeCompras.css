@@ -14,12 +14,29 @@
     margin-right: 4rem;
 } */
 
-.itemComp{
-    margin-top: 10px;
+p{
+    text-align: justify;
 }
 
-#itemComp{
-    margin-top: 10px;
+
+.itemComp{
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    border: solid #815636;
+    background: rgb(255,255,255);
+    background: radial-gradient(circle, rgba(255,255,255,1) 17%, rgba(165,208,159,1) 88%);
+}
+
+.informacion{
+    padding-left : 2px solid;
+}
+
+#elementosCarritos{
+    margin-top: 1rem;
+}
+
+.NombreTarjeta{
+    font-size: 2rem;
 }
 
 #iconos-redes{
@@ -30,10 +47,12 @@
 }
 .item-interior{
     background-color:#679436;
+    
 }
 
 .items-secundario{
     height: 3rem;
+    
     font-family: 'Merriweather', serif;
     font-size:1rem;
     background-color: #679436;
