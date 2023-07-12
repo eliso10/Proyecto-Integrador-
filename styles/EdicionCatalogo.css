@@ -55,6 +55,8 @@
 }
 #nuevo{
     color:black ;
+
+    font-size: .85rem;
 }
 #nuevo:hover{
     color: #EFE9E7;

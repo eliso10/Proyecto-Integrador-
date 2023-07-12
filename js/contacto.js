@@ -4,6 +4,11 @@ function Captacion() {
     let nombre = document.getElementById("floatingInputUsername");
     let correo = document.getElementById("floatingInputEmail");
     let Mensaje = document.getElementById("floatingInputComentarios");
+
+    mensajeJson=JSON.stringify(Mensaje.value);
+    nombreJson=JSON.stringify(nombre.value);
+    correoJSon=JSON.stringify(correo.value);
+
     if (floatingInputUsername ==" ") {
         alert("El nombre es necesario digitar")
         document.getElementById("floatingInputUsername").focus();
@@ -17,7 +22,7 @@ function Captacion() {
         }
     }
 
-    console.log(nombre.value);
-    console.log(correo.value);
-    console.log(Mensaje.value);
+    console.log(nombreJson);
+    console.log(correoJSon);
+    console.log(mensajeJson);
 }
