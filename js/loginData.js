@@ -8,18 +8,17 @@ const regexPassword = /^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[a-zA-Z]).{8,}$/;
 //^[A-Za-z0-9._+-]+@gmail\\.com$
 
     //poblar alert
-const alertPlaceholder = document.getElementById('liveAlertPlaceholder')
-const appendAlert = (message, type) => {
-const wrapper = document.createElement('div')
-wrapper.innerHTML = [
-  `<div class="alert alert-${type} alert-dismissible" role="alert">`,
-  `   <div>${message}</div>`,
-  '   <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>',
-  '</div>'
-].join('')
-
-alertPlaceholder.append(wrapper)
-}
+    const alertPlaceholder = document.getElementById('liveAlertPlaceholder')
+    const appendAlert = (message, type) => {
+    alertPlaceholder.innerHTML = [
+      `<div class="alert alert-${type} alert-dismissible" role="alert">`,
+      `   <div>${message}</div>`,
+      '   <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>',
+      '</div>'
+    ].join('')
+    
+    alertPlaceholder.append()
+    }
 
 //revision de los campos con el regex
 form.addEventListener('submit',(event)=>{
@@ -39,8 +38,8 @@ form.addEventListener('submit',(event)=>{
     
     appendAlert('Verifica la información de ambos campos', 'danger');
   } else if (!regexEmail.test(inputEmail.value)){
-    appendAlert('Verifica la información del correo electrónico', 'danger');
+    appendAlert('Verifica el correo electrónico', 'danger');
   } else{
-    appendAlert('Verifica la información de la contraseña. Recuerda que son mínimo 8 caracteres: al menos un número, un símbolo, una mayúscula y una minúscula', 'danger'); 
+    appendAlert('Verifica la contraseña. Recuerda que son mínimo 8 caracteres: al menos un número, un símbolo, una mayúscula y una minúscula', 'danger'); 
   }
 })

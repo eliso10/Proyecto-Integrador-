@@ -23,7 +23,7 @@ body {
     letter-spacing: 0.05rem;
     padding: 0.75rem 1rem;
     background: rgba(103, 148, 54, 0.73);
-    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);  
+    box-shadow: 0rem 0.25rem 0.25rem 0rem rgba(0, 0, 0, 0.25);  
     font-family: 'Merriweather', serif;
     margin: auto;
     border: #679436BA;
@@ -46,7 +46,7 @@ body {
     border: none;
   }
 
-  #Registrate_titulo{
+  .titulos{
     font-family: 'Merriweather', serif;
     font-size: 2.5rem;
     

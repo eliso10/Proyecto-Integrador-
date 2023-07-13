@@ -18,18 +18,17 @@ const regexPhone = /^\d{10}$/;
 const regexPassword = /^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[a-zA-Z]).{8,}$/;
 
     //poblar alert
-const alertPlaceholder = document.getElementById('liveAlertPlaceholder')
-const appendAlert = (message, type) => {
-const wrapper = document.createElement('div')
-wrapper.innerHTML = [
-  `<div class="alert alert-${type} alert-dismissible" role="alert">`,
-  `   <div>${message}</div>`,
-  '   <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>',
-  '</div>'
-].join('')
-
-alertPlaceholder.append(wrapper)
-}
+    const alertPlaceholder = document.getElementById('liveAlertPlaceholder')
+    const appendAlert = (message, type) => {
+    alertPlaceholder.innerHTML = [
+      `<div class="alert alert-${type} alert-dismissible" role="alert">`,
+      `   <div>${message}</div>`,
+      '   <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>',
+      '</div>'
+    ].join('')
+    
+    alertPlaceholder.append()
+    }
 
 //revision de los campos con el regex
 form.addEventListener('submit',(event)=>{
@@ -43,8 +42,8 @@ form.addEventListener('submit',(event)=>{
       console.log(JSON.stringify(allData));
   
       //Enviar a la pagina de inicio si se inicia sesion exitosamente
-        window.location.href = '../index.html';
+      appendAlert('¡Gracias! Hemos enviado un correo electrónico para que puedas verificar tu cuenta', 'success');
     } else{
-      appendAlert('Verifica la información bindada', 'danger'); 
+      appendAlert('Verifica la información', 'danger'); 
     }
   })
