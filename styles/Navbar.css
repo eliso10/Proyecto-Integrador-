@@ -1,0 +1,67 @@
+
+/*todo esto corresponde a los estilos del Navbar*/
+#navbarNav,
+#navbar-container {
+  justify-content: right;
+  align-items: center;
+  text-align: end;
+  background-color: #679436;
+}
+
+
+.title {
+  margin-left: 1rem;
+  color: rgb(29, 26, 26);
+  font-family: 'Merriweather', serif;
+  text-decoration: none;
+  margin-right: 5rem;
+  margin-top: 0.5rem;
+}
+
+#pr{
+  background-color: #679436;
+}
+#TituloPR{
+  color: black;
+  background-color: #679436;
+}
+
+#iconoCarrito{
+  width: 2rem;
+  height: 2rem;
+  background-color: #679436;
+}
+#carritoIcon{
+  background-color: #679436;
+}
+.navbar {
+  padding: 0;
+}
+
+.nav-link {
+  font-family: 'Montserrat', sans-serif;
+  font-size: medium;
+  margin-top: 0.5rem;
+
+}
+
+.nav-link:hover, .title:hover {
+  color: #EFE9E7;
+}
+
+#footer {
+  background-color:#A5D09F ;
+
+}
+
+#iconos-redes {
+  
+  height: 4rem ;
+  width: 4rem ;
+  margin-top: 1rem;
+  
+}
+
+
+/*hasta aqui terminan los estilos del navbar*/
+
