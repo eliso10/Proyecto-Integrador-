@@ -2,6 +2,7 @@
 const containerCards = document.getElementById('container-cards');
 
 import {plantas} from './base_Datos.js'
+import {buscarPlantasname} from './base_Datos.js'
 
 //const plantas = require('./data_pruebas') ;
 
@@ -62,7 +63,11 @@ const renderElements = (elements, card, planta) => {
     img.alt = "Responsive image";
     
     card.children[0].append(img);
-    card.children[1].append(elements.nombre, elements.descripcion, elements.precio, elements.button);
+    elements.descripcion.classList.add('text-justify');
+    const información = document.createElement('div');
+    información.classList.add('informacionContainer')
+    información.append( elements.descripcion);
+    card.children[1].append(elements.nombre,  elements.precio, información, elements.button);
 }
 
 
@@ -75,6 +80,30 @@ plantas.forEach(planta => {
 });
 
 
+containerCards.addEventListener('click', e => {
+    if(e.target.classList.contains('botonTarjeta') ){
+        const productoTarjeta = e.target.parentElement;
+        console.log(productoTarjeta);
+        console.log(productoTarjeta.querySelector('.nombreProducto').textContent);
+
+        // //En caso de ser necesario creó un onjeto de java desde el arreglo directo
+        const infoProduct = (productoTarjeta.querySelector('.nombreProducto').textContent);
+        console.log(infoProduct);
+        const elementoBD = buscarPlantasname(infoProduct);
+        console.log(elementoBD);
+        
+        // const infoProduct2 = {
+        //     nombre: productoTarjeta.querySelector('.NombreTarjeta').textContent,
+        //     cantidad : 1,
+        //     precio: productoTarjeta.querySelector('.precioProducto').textContent
+
+        // }
+
+        // eliminarCarrito(infoProduct.id);
+        // console.log(carrito);
+        // RenderCarrito();
+    }
+});
 
   
     //     const containerProduct = document.createElement('div'); 

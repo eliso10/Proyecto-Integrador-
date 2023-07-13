@@ -22,7 +22,7 @@ var carrito =[
         nombre: "Sistema de Riego",
         url: "https://m.media-amazon.com/images/I/812q2D0i3sL._AC_UF1000,1000_QL80_.jpg",
         precio: 950.00,
-        descripcion: "Es un sistema que te permitira regar de manera facil y sencilla hasta 30m de distancia",
+        descripcion: "Es un sistema que te permitira regar de manera facil y sencilla hasta 30m de distancia, Es un sistema que te permitira regar de manera facil y sencilla hasta 30m de distancia",
         cantidad: 1,
     },
 ]

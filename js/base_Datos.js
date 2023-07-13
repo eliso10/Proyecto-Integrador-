@@ -204,8 +204,7 @@ var herramientas =[
     },
 ]
 
-carrito =[
-];
+//carrito =[];
 
 //Buscar elementos en la BD de herramientas
 function buscarHerramientas(idHerramienta){
@@ -214,8 +213,14 @@ return result;
 }
 
 //Buscar elementos en la BD de plantas
-function buscarPlantas(idPlanta){
+export  function buscarPlantasid(idPlanta){
     var result = plantas.find(item => item.id === idPlanta);
+    return result;
+}
+
+//Buscar elementos en la BD de plantas
+export function buscarPlantasname(nombrePlanta){
+    var result = plantas.find(item => item.nombre === nombrePlanta);
     return result;
 }
 
@@ -259,4 +264,4 @@ console.log(herramientas);
 export {plantas}; 
 export {macetas}; 
 export {herramientas};
-export {carrito};
+//export {carrito};
