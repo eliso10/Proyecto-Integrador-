@@ -1,7 +1,9 @@
+// const plantas = require('./data_pruebas');
 const containerCards = document.getElementById('container-cards');
 
-import {macetas} from './base_Datos_CP.js'
-import { buscarMacetasname } from './base_Datos_CP.js';
+import {plantas} from './base_Datos_CP.js'
+import {buscarPlantasname} from './base_Datos_CP.js'
+
 
 const createCard = () => {
     const card = document.createElement('div');
@@ -14,38 +16,37 @@ const createCard = () => {
 }
 
 const createDescription = () => {
-    const elementsPot = {
+    const elementsPlant = {
         nombre: document.createElement('h1'),
         descripcion: document.createElement('p'),
         precio: document.createElement('p'),
         button: document.createElement('button'),
     }
     
-    return elementsPot;
+    return elementsPlant;
 }
 
 
-const populateElements = (infoPot, pot) => {
-    infoPot.nombre.textContent = pot.nombre ;
-    infoPot.descripcion.textContent = pot.descripcion;
-    infoPot.precio.textContent = "$"+pot.precio+" / pesos";
-    infoPot.button.textContent = "Al Carrito";
+const populateElements = (infoPlantas, planta) => {
+    infoPlantas.nombre.textContent = planta.nombre ;
+    infoPlantas.descripcion.textContent = planta.descripcion;
+    infoPlantas.precio.textContent = "$"+planta.precio+" / pesos";
+    infoPlantas.button.textContent = "Al Carrito";
 
-    infoPot.nombre.classList.add("nombreProducto");
-    infoPot.precio.classList.add("precio");
-    infoPot.descripcion.classList.add("decripcion");
-    infoPot.button.classList.add("botonTarjeta");
+    infoPlantas.nombre.classList.add("nombreProducto");
+    infoPlantas.precio.classList.add("precio");
+    infoPlantas.descripcion.classList.add("decripcion");
+    infoPlantas.button.classList.add("botonTarjeta");
 
-    return infoPot;
+    return infoPlantas;
 }
 
-const renderElements = (elements, card, pot) => {
+const renderElements = (elements, card, planta) => {
     const img = document.createElement('img');
-    img.src = pot.url;
+    img.src = planta.url;
     img.classList.add('img-fluid');
     img.alt = "Responsive image";
     
-    card.children[0].append(img);
     card.children[0].append(img);
     /* modificación para estilos de tarjetas, se creó constante information */
     elements.descripcion.classList.add('text-justify');
@@ -56,13 +57,14 @@ const renderElements = (elements, card, pot) => {
 }
 
 
-macetas.forEach(pot => {
+plantas.forEach(planta => {
     const card = createCard();
-    const elementsPot = createDescription();
-    const populatedElements = populateElements(elementsPot, pot);
-    renderElements(populatedElements, card, pot);
+    const elementsPlant = createDescription();
+    const populatedElements = populateElements(elementsPlant, planta);
+    renderElements(populatedElements, card, planta);
     containerCards.appendChild(card);
 });
+
 
 containerCards.addEventListener('click', e => {
     if(e.target.classList.contains('botonTarjeta') ){
@@ -72,9 +74,8 @@ containerCards.addEventListener('click', e => {
         // //En caso de ser necesario creó un onjeto de java desde el arreglo directo
         const infoProduct = (productoTarjeta.querySelector('.nombreProducto').textContent);
         console.log(infoProduct);
-        const elementoBD = buscarMacetasname(infoProduct);
+        const elementoBD = buscarPlantasname(infoProduct);
         console.log(elementoBD);
-        
-        
+   
     }
 });
