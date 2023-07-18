@@ -19,6 +19,16 @@ p{
 }
 
 
+.carritoContador {
+    height: 25px;
+    width: 25px;
+    color: red;
+    border-radius: 50%;
+    display: inline-block;
+    position: static;
+  }
+
+
 .itemComp{
     margin-top: 2rem;
     margin-bottom: 1rem;
@@ -59,8 +69,9 @@ p{
 }
 
 #llevas-todo{
-    background-color: #815636;
-    color: white;
+
+    margin:0;
+
     font-family: 'Merriweather', serif;
     font-size:1.7rem;
 }
@@ -96,7 +107,9 @@ body{
     margin-left: 6px;
     margin-right: 6px;
     margin-top: 3px;
-    background-color: blue;
+
+    background-color: red;
+
     border-radius: 50%;
     display: inline-block;
 }

@@ -1,31 +1,34 @@
 const mainContainerTarjetas = document.getElementById('elementosCarritos');
 
-var carrito =[
-    {
-        id: 1,
-        nombre: "Fertilizante Nitrofosca 1kg",
-        url: "https://elheraldodemartinez.com.mx/images/Articulos2018/Articulo/2020/011Noviembre/28Nov/PAG-3-PRINCIPAL.png",
-        precio: 250.00,
-        descripcion: "Este fertilizante ayudara a que tu planta crezca y tenga brotes nuevos",
-        cantidad: 1,
-    },
-    {
-        id: 2,
-        nombre: "Fertilizante Florifil 1kg",
-        url: "https://agropos.com.br/wp-content/uploads/2022/03/Fertilizante-Para-Planta.jpg",
-        precio: 250.00,
-        descripcion: "Este fertilizante ayudara a que tus plantas que dan flores tengan aun mas",
-        cantidad: 1,
-    },
-    {
-        id: 3,
-        nombre: "Sistema de Riego",
-        url: "https://m.media-amazon.com/images/I/812q2D0i3sL._AC_UF1000,1000_QL80_.jpg",
-        precio: 950.00,
-        descripcion: "Es un sistema que te permitira regar de manera facil y sencilla hasta 30m de distancia, Es un sistema que te permitira regar de manera facil y sencilla hasta 30m de distancia",
-        cantidad: 1,
-    },
-]
+const spanCarrito = document.getElementById('carritoIcon');
+const total = document.getElementById('total');
+//var badge = document.createElement('span');
+import * as dateBase from "./base_Datos.js";
+
+var carrito = JSON.parse(localStorage.getItem('carrito'));
+
+console.log(dateBase.carrito);
+console.log(carrito);
+
+// FUNCION PARA CONTADOR DEL CARRITO
+function contadorCarrito(){
+    let badge = document.createElement('span');
+    badge.classList.add('position-absolute', 'translate-middle', 'badge', 'rounded-pill', 'bg-danger');
+    badge.setAttribute('id', 'carritoContador');
+    badge.textContent = carrito.length;
+    spanCarrito.appendChild(badge); 
+    localStorage.setItem('carrito', JSON.stringify(carrito));
+    carrito = JSON.parse(localStorage.getItem('carrito'));
+}
+
+function renderTotal(){
+    var totalPrecio= 0;
+    carrito.forEach(producto => {
+        totalPrecio += (producto.precio*producto.cantidad);
+        console.log(producto.precio)
+        });
+    total.textContent = "Total a pagar: "+totalPrecio;
+}
 
 
 
@@ -56,6 +59,10 @@ mainContainerTarjetas.addEventListener('click', e => {
         eliminarCarrito(infoProduct.id);
         console.log(carrito);
         RenderCarrito();
+        renderTotal();
+        localStorage.setItem('carrito', JSON.stringify(carrito));
+        carrito = JSON.parse(localStorage.getItem('carrito'));
+
     }
 });
 
@@ -84,7 +91,9 @@ mainContainerTarjetas.addEventListener('click', e => {
         //console.log("Impresión si existe el objeto: "+existente);
 
         if(existente){
-            objIndex = carrito.findIndex((obj => obj.id === infoProduct.id));
+
+            let objIndex = carrito.findIndex((obj => obj.id === infoProduct.id));       
+
             //console.log("Impresión del indice en el arreglo: "+objIndex);
             carrito[objIndex].cantidad--;
             if(carrito[objIndex].cantidad<=0){
@@ -93,6 +102,11 @@ mainContainerTarjetas.addEventListener('click', e => {
         }
        // console.log(infoProduct);
         RenderCarrito();
+
+        renderTotal();
+        localStorage.setItem('carrito', JSON.stringify(carrito));
+        carrito = JSON.parse(localStorage.getItem('carrito'));
+
         
     }
 })
@@ -116,14 +130,20 @@ mainContainerTarjetas.addEventListener('click', e => {
         const existente = existeCarritoNombre(infoProduct2.nombre);
         
         if(existente){
-            objIndex = carrito.findIndex((obj => obj.id === infoProduct.id));
+
+            let objIndex = carrito.findIndex((obj => obj.id === infoProduct.id));
+
             console.log("Impresión del indice en el arreglo: "+objIndex);
             carrito[objIndex].cantidad++;
             console.log(carrito);
         }
         console.log(infoProduct);
         RenderCarrito();
-        
+
+        renderTotal();
+        localStorage.setItem('carrito', JSON.stringify(carrito));
+        carrito = JSON.parse(localStorage.getItem('carrito'));  
+
     }
 })
 
@@ -264,6 +284,9 @@ carrito.forEach(compra => {
     mainContainerTarjetas.appendChild(mainContainer);
 
     });
+    contadorCarrito()
 }
-
+renderTotal()
 RenderCarrito();
+contadorCarrito();
+

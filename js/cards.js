@@ -4,6 +4,9 @@ const containerCards = document.getElementById('container-cards');
 import {plantas} from './base_Datos.js'
 import {buscarPlantasname} from './base_Datos.js'
 
+import * as dateBase from "./base_Datos.js";
+
+
 //const plantas = require('./data_pruebas') ;
 
 // const getPlantas = () => {
@@ -86,24 +89,18 @@ containerCards.addEventListener('click', e => {
         console.log(productoTarjeta);
         console.log(productoTarjeta.querySelector('.nombreProducto').textContent);
 
-        // //En caso de ser necesario creó un onjeto de java desde el arreglo directo
+
+        // //En caso de ser necesario creó un objeto de java desde el arreglo directo
         const infoProduct = (productoTarjeta.querySelector('.nombreProducto').textContent);
         console.log(infoProduct);
         const elementoBD = buscarPlantasname(infoProduct);
-        console.log(elementoBD);
+        console.log(typeof(elementoBD));
+        dateBase.añadirCarrito(elementoBD);
         
-        // const infoProduct2 = {
-        //     nombre: productoTarjeta.querySelector('.NombreTarjeta').textContent,
-        //     cantidad : 1,
-        //     precio: productoTarjeta.querySelector('.precioProducto').textContent
-
-        // }
-
-        // eliminarCarrito(infoProduct.id);
-        // console.log(carrito);
-        // RenderCarrito();
+    
     }
 });
+
 
   
     //     const containerProduct = document.createElement('div'); 
