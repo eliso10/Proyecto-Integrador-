@@ -3,7 +3,9 @@ const containerCards = document.getElementById('container-cards');
 
 import {plantas} from './base_Datos.js'
 import {buscarPlantasname} from './base_Datos.js'
+
 import * as dateBase from "./base_Datos.js";
+
 
 //const plantas = require('./data_pruebas') ;
 
@@ -87,6 +89,7 @@ containerCards.addEventListener('click', e => {
         console.log(productoTarjeta);
         console.log(productoTarjeta.querySelector('.nombreProducto').textContent);
 
+
         // //En caso de ser necesario creó un objeto de java desde el arreglo directo
         const infoProduct = (productoTarjeta.querySelector('.nombreProducto').textContent);
         console.log(infoProduct);
@@ -97,7 +100,6 @@ containerCards.addEventListener('click', e => {
     
     }
 });
-
 
 
   

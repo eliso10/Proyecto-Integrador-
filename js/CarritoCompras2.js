@@ -1,4 +1,5 @@
 const mainContainerTarjetas = document.getElementById('elementosCarritos');
+
 const spanCarrito = document.getElementById('carritoIcon');
 const total = document.getElementById('total');
 //var badge = document.createElement('span');
@@ -30,6 +31,7 @@ function renderTotal(){
 }
 
 
+
 function  eliminarCarrito(indice){
     carrito = carrito.filter(object => {
         return object.id !== indice;
@@ -53,13 +55,14 @@ mainContainerTarjetas.addEventListener('click', e => {
             precio: productoTarjeta.querySelector('.precioProducto').textContent
 
         }
-        
+
         eliminarCarrito(infoProduct.id);
         console.log(carrito);
         RenderCarrito();
         renderTotal();
         localStorage.setItem('carrito', JSON.stringify(carrito));
         carrito = JSON.parse(localStorage.getItem('carrito'));
+
     }
 });
 
@@ -88,7 +91,9 @@ mainContainerTarjetas.addEventListener('click', e => {
         //console.log("Impresión si existe el objeto: "+existente);
 
         if(existente){
-            let objIndex = carrito.findIndex((obj => obj.id === infoProduct.id));
+
+            let objIndex = carrito.findIndex((obj => obj.id === infoProduct.id));       
+
             //console.log("Impresión del indice en el arreglo: "+objIndex);
             carrito[objIndex].cantidad--;
             if(carrito[objIndex].cantidad<=0){
@@ -97,9 +102,11 @@ mainContainerTarjetas.addEventListener('click', e => {
         }
        // console.log(infoProduct);
         RenderCarrito();
+
         renderTotal();
         localStorage.setItem('carrito', JSON.stringify(carrito));
         carrito = JSON.parse(localStorage.getItem('carrito'));
+
         
     }
 })
@@ -123,16 +130,20 @@ mainContainerTarjetas.addEventListener('click', e => {
         const existente = existeCarritoNombre(infoProduct2.nombre);
         
         if(existente){
+
             let objIndex = carrito.findIndex((obj => obj.id === infoProduct.id));
+
             console.log("Impresión del indice en el arreglo: "+objIndex);
             carrito[objIndex].cantidad++;
             console.log(carrito);
         }
         console.log(infoProduct);
         RenderCarrito();
+
         renderTotal();
         localStorage.setItem('carrito', JSON.stringify(carrito));
-        carrito = JSON.parse(localStorage.getItem('carrito'));
+        carrito = JSON.parse(localStorage.getItem('carrito'));  
+
     }
 })
 
@@ -278,3 +289,4 @@ carrito.forEach(compra => {
 renderTotal()
 RenderCarrito();
 contadorCarrito();
+

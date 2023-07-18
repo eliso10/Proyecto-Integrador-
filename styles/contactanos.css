@@ -1,0 +1,131 @@
+body {
+  background: #EFE9E7;
+  background: linear-gradient(to right, #EFE9E7, #EFE9E7);
+}
+
+.divPrincipal {
+  background-color: #815636;
+  margin: 0;
+}
+
+#logoPrincipal {
+  background-color: #A5D09F;
+  width: 26rem;
+  height: 18rem;
+}
+
+#titulo {
+  font-family: 'Merriweather', serif;
+  margin-top: 1.5rem;
+  margin-bottom: 2.5rem;
+  text-align: center;
+  color: #EFE9E7;
+  background-color: #815636;
+}
+
+#fondocuestionario{
+  background-color: #EFE9E7;
+}
+
+#parrafo-pricipal {
+  font-family: 'Montserrat', sans-serif;
+  font-size: large;
+  text-align: center;
+  background-color: #A5D09F;
+
+}
+
+.card-img-left {
+  width: 40rem;
+  height: 32rem;
+  margin-top: 4rem;
+  background-size: contain;
+  background-size: cover;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.btn-primary {
+  font-size: 0.7rem;
+  letter-spacing: 0.05rem;
+  padding: 0.75rem 1rem;
+  background: rgba(103, 148, 54, 0.73);
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  font-family: 'Merriweather', serif;
+  margin: auto;
+  border: #679436BA;
+}
+.tb:hover{
+  background-color: #554111;
+}
+
+.btn-google {
+  color: white !important;
+  background-color: #ea4335;
+}
+
+.btn-facebook {
+  color: white !important;
+  background-color: #3b5998;
+}
+
+#idContenedorPrincipal {
+  background-color: #EFE9E7;
+  margin: 0%;
+  border: none;
+
+}
+
+#Registrate_titulo {
+  font-family: 'Merriweather', serif;
+  font-size: 2.5rem;
+  text-align: center;
+  margin-top: 0;
+
+}
+
+.vr {
+  height: 100%;
+  width: .2rem;
+  color: #554111;
+  opacity: .85;
+  float: right;
+  clear: right;
+  margin-left: auto;
+}
+
+col-6>input {
+  height: 100%
+}
+
+#text_label_Nom_Ape {
+  margin-left: 1rem;
+}
+
+.form-control {
+  background: transparent;
+  border: solid #554111;
+}
+
+.card-body {
+  padding: 0;
+  margin: 0;
+}
+
+#div-iconos {
+  align-items: center;
+  height: 10rem;
+}
+
+#iconos {
+  width: 60px;
+  flex-direction: column;
+  justify-items: center;
+  align-items: center;
+  margin-top: 2rem;
+}
+
+
+.overflow-hidden {
+  margin: 0;
+}

@@ -1,7 +1,9 @@
 /*todo esto corresponde a los estilos del Navbar*/
 #navbarNav,
 .container-fluid {
+
   justify-content: center;
+
   align-items: center;
   text-align: end;
   background-color: #679436;
@@ -10,6 +12,7 @@
 
 .title {
   margin-left: 1rem;
+
   background-color: #679436;
   font-family: 'Merriweather', serif;
   text-decoration: none;
@@ -19,21 +22,25 @@
 
 .title:hover {
   color: #554111;
+
 }
 
 #iconoCarrito{
   width: 2rem;
   height: 2rem;
 }
+
 #navbarPrincipal {
     padding-top: 0px;
     padding-bottom: 0px;
+
 
 }
 
 .nav-link {
   font-family: 'Montserrat', sans-serif;
   font-size: medium;
+
 
 }
 
@@ -60,4 +67,5 @@
 
 .titulo_Navbar{
   color: black;
+
 }

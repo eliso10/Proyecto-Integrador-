@@ -1,0 +1,46 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@900&family=Montserrat:wght@500&display=swap');
+
+body {
+    background-color: #EFE9E7;
+    
+}
+
+.fondo{
+    background-image: url("/images/Productos.png");
+    height: 15rem;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #EFE9E7;
+}
+
+.container{
+align-items: center;
+}
+
+.button {
+    border-radius: 12px;
+    background-color: #9ad80a;
+    color: #000000;
+    font-size: 18px;
+}
+
+#Maceta{
+    align-items: center;
+    background-position: center;
+    color: #EFE9E7;
+}
+
+#encabezado {
+    font-family: 'Merriweather', serif;
+    color: #EFE9E7;
+}
+
+#titulos {
+    font-family: 'Merriweather', serif;
+}
+
+#parrafo {
+    font-family: 'Montserrat', serif;
+    color: #000000;
+    background-color: #EFE9E7;
+}
