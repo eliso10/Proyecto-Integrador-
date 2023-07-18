@@ -1,3 +1,34 @@
+var loMasPedido = [
+    {
+        id: 5,
+        nombre: "ECHEVERIA",
+        url: "https://como-plantar.com/wp-content/uploads/2021/09/cuidar-y-cultivar-Echeveria-Peacockii.jpg.webp",
+        precio: 14.02,
+        descripcion: "Lorem Ipsum is simply dummy tex"
+    },
+    {
+        id: 3,
+        nombre: "Esfera Ceramica",
+        url: "https://i0.wp.com/plantify.mx/wp-content/uploads/2021/10/esfera-grande-fibra.jpg?resize=300%2C300&ssl=1",
+        precio: 450.00,
+        descripcion: "Una maceta perfecta para resaltar tus plantas ",
+    },
+    {
+        id: 4,
+        nombre: "Kit de Herramientas",
+        url: "https://as2.ftcdn.net/v2/jpg/02/65/10/51/1000_F_265105182_1kHISR3wzXYeADjOmnhU8lLvd6EyNxuE.jpg",
+        precio: 550.00,
+        descripcion: "Todo lo que necesitas para dar mantenimiento a tus preciadas plantas"
+    },
+    {
+        id: 16,
+        nombre: "Violeta ",
+        url: "https://thumbs.dreamstime.com/b/flores-violetas-de-saintpaulia-podridas-plantar-en-maceta-y-herramientas-jard%C3%ADn-para-plantas-macetas-tablas-madera-198059583.jpg",
+        precio: 240.00,
+        descripcion: "Planta de luz interior una excelente opcion si lo que buscas es tener una planta resistente y con mucho color"
+    }
+]
+
 var plantas = [
     {
         id: 1,
@@ -204,8 +235,9 @@ var herramientas =[
     },
 ]
 
-// carrito =[
-// ];
+
+var carrito =[]
+
 
 //Buscar elementos en la BD de herramientas
 function buscarHerramientas(idHerramienta){
@@ -214,8 +246,14 @@ return result;
 }
 
 //Buscar elementos en la BD de plantas
-function buscarPlantas(idPlanta){
+export  function buscarPlantasid(idPlanta){
     var result = plantas.find(item => item.id === idPlanta);
+    return result;
+}
+
+//Buscar elementos en la BD de plantas
+export function buscarPlantasname(nombrePlanta){
+    var result = plantas.find(item => item.nombre === nombrePlanta);
     return result;
 }
 
@@ -225,7 +263,7 @@ function buscarMacetas(idMacetas){
     return result;
 }
 
-function añadirPlanta(nombre, url, precio, descripcion){
+export  function añadirPlanta(nombre, url, precio, descripcion){
     let lastKey = Object.keys(plantas).pop();
     lastKey++;
     lastKey++;
@@ -233,19 +271,51 @@ function añadirPlanta(nombre, url, precio, descripcion){
 }
 
 
-function añadirMacetas(nombre, url, precio, descripcion){
+export function añadirMacetas(nombre, url, precio, descripcion){
     let lastKey = Object.keys(macetas).pop();
     lastKey++;
     lastKey++;
     herramientas.push({'id': lastKey ,'nombre' : nombre, 'url': url, 'precio': precio, 'descripcion': descripcion}); 
 }
 
-function añadirHerramientas(nombre, url, precio, descripcion){
+export function añadirHerramientas(nombre, url, precio, descripcion){
     let lastKey = Object.keys(herramientas).pop();
     lastKey++;
     lastKey++;
     herramientas.push({'id': lastKey ,'nombre' : nombre, 'url': url, 'precio': precio, 'descripcion': descripcion}); 
 }
+
+export function añadirCarrito(producto){
+
+    const isFound = carrito.some(element => {
+        if (element.id === producto.id) {
+        return true;
+        }
+        else return false;
+    });
+
+    if (isFound == false){
+        carrito.push(producto)
+        producto.cantidad = 1; 
+    } 
+    else{ 
+        console.log("This item already exists");
+        const index = carrito.findIndex(object => {
+            return object.id === producto.id;
+          });
+        carrito[index].cantidad++;
+    }
+   
+   
+    localStorage.setItem('carrito', JSON.stringify(carrito));
+    carrito = JSON.parse(localStorage.getItem('carrito'));
+    console.log(carrito);
+}
+
+
+
+console.log(carrito);
+
 
 añadirHerramientas("Martillo", 'https://www.hm.supply/products/martillo-una', 'https://www.hm.supply/products/martillo-una', 300.00, 'ciowjiefmwinfiwniiniun');
 
@@ -255,8 +325,9 @@ console.log(herramientas);
 
 herramientas.push({'id': 1 ,'nombre' :'Manguera de Riego', 'url': 'https://plasticforte.com/wp-content/uploads/2022/06/accesorios-jardineria-plasticforte.jpg', 'precio': 500.00, 'descripcion': 'Para que tus plantas queden perfectamente regadas utiliza nuestra manguera con soporte a pared'});
 console.log(herramientas);
-
+*/
 export {plantas}; 
 export {macetas}; 
 export {herramientas};
-// export {carrito};
+export {loMasPedido};
+/*export {carrito};*/

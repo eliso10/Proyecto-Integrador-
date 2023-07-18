@@ -13,10 +13,17 @@ body {
 }
 
 
-#titulos {
-    font-family: 'Merriweather', serif;
+#header {
+    font-family: 'Merriweather';
     color: white;
     font-size: 3rem;
+    margin-left: 3rem;
+}
+
+#barra {
+    font-family: 'Merriweather';
+    color: white;
+    font-size: 1.5rem;
 }
 
 #tarjetas{
@@ -24,8 +31,8 @@ body {
     background-color: #A5D09F;
     border-color: #EFE9E7;
     margin: auto;
-    max-width: 20rem;
-    max-height: 15rem;
+    max-width: 25rem;
+    max-height: 20rem;
     transition: all 0.3s;
 }
 
@@ -33,10 +40,19 @@ body {
     transform: scale(1.15);
 }
 
-.title{
+.card-title {
+    font-family: 'Merriweather';
+    color: black;
+    font-size: 2rem;
+}
+
+.subtitle{
     text-align: left;
     font-size: 3rem;
     padding: 3rem;
+    font-family: 'Merriweather';
+    color: black;
+    font-size: 3rem;
 }
 
 .card{
@@ -48,10 +64,6 @@ body {
     background: #A5D09F;
     }
 
-    h1, h5{
-        font-family: 'Merriweather', serif;
-        color: black;
-    }
     button{
         border: none;
     }
@@ -149,4 +161,11 @@ body {
     a{
         text-decoration: none;
         color: black
+    }
+
+    #titulo-encabezado-PI{
+        font-family: 'Merriweather', serif;
+        text-align: center;
+        color: #EFE9E7;
+        background-color: #815636;
     }

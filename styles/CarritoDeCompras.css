@@ -10,9 +10,45 @@
     background-color:#679436;
     padding: 0;
 }
-#compra{
+/* #compra{
     margin-right: 4rem;
+} */
+
+p{
+    text-align: justify;
 }
+
+
+.carritoContador {
+    height: 25px;
+    width: 25px;
+    color: red;
+    border-radius: 50%;
+    display: inline-block;
+    position: static;
+  }
+
+
+.itemComp{
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    border: solid #815636;
+    background: rgb(255,255,255);
+    background: radial-gradient(circle, rgba(255,255,255,1) 17%, rgba(165,208,159,1) 88%);
+}
+
+.informacion{
+    padding-left : 2px solid;
+}
+
+#elementosCarritos{
+    margin-top: 1rem;
+}
+
+.NombreTarjeta{
+    font-size: 2rem;
+}
+
 #iconos-redes{
     width: 20px;
     height: 20px;
@@ -21,17 +57,21 @@
 }
 .item-interior{
     background-color:#679436;
+    
 }
 
 .items-secundario{
     height: 3rem;
+    
     font-family: 'Merriweather', serif;
     font-size:1rem;
     background-color: #679436;
 }
 
 #llevas-todo{
+
     margin:0;
+
     font-family: 'Merriweather', serif;
     font-size:1.7rem;
 }
@@ -47,38 +87,10 @@
 background-color: #EFE9E7;
 }
 
-body{
-    background:#EFE9E7
-}
-
-.ratings i{
-    font-size: 16px;color: red
-}
-.strike-text{
-    color: red;text-decoration: line-through
-}
-.product-image{
-    width: 100%
-}
-
-.dot{
-    height: 7px;
-    width: 7px;
-    margin-left: 6px;
-    margin-right: 6px;
-    margin-top: 3px;
-    background-color: blue;
-    border-radius: 50%;
-    display: inline-block;
-}
-.spec-1{
-    color: #938787;
-    font-size: 15px
-}
-    
-h5{
-    font-weight: 400
-}
-.para{
-    font-size: 16px
-}
+body{background:#EFE9E7}
+.ratings i{font-size: 16px;color: red}
+.strike-text{color: red;text-decoration: line-through}
+.product-image{width: 100%}
+.dot{height: 7px;width: 7px;margin-left: 6px;margin-right: 6px;margin-top: 3px;background-color: blue;border-radius: 50%;display: inline-block}
+.spec-1{color: #938787;font-size: 15px}
+h5{font-weight: 400}.para{font-size: 16px}

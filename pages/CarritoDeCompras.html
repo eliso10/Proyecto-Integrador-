@@ -77,6 +77,7 @@
     <div class="container-fluid text-center" id="tituloCompra">
         <h1 id="titulo">Tu Carrito de Compras </h1>
         <p id="llevas-todo">¿llevas todo lo que necesitas?</p>
+
     </div>
     <div class="container-fluid text-center secundario ">
         <div class="row align-items-center items-secundario">
@@ -85,56 +86,56 @@
 
     <div class="container mt-5 mb-5" id="fondo">
         <div class="d-flex justify-content-center row">
-            <div class="col-md-10">
+            <div class="col-md-10" id="elementosCarritos">
 
-                <div class="row p-2 bg-white border rounded">
-                    <div class="col-md-3 mt-1"><img class="img-fluid img-responsive rounded product-image" src="https://como-plantar.com/wp-content/uploads/2021/09/cultivar-y-cuidar-cactus-oreja-de-conejo.jpg.webp"></div>
-                    <div class="col-md-6 mt-1">
-                        <h5>Cactus mini</h5>
-                        <div class="d-flex flex-row">
-                            <div class="ratings mr-2"><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i></div><span>310</span>
-                        </div>
-                        <div class="mt-1 mb-1 spec-1"><span>Interios/Exterior</span><span class="dot"></span><span>Pequeña</span><span class="dot"></span><span>Elegante<br></span></div>
-                        <div class="mt-1 mb-1 spec-1"><span>Diseño Unico</span><span class="dot"></span><span>Casa</span><span class="dot"></span><span>Oficina<br></span></div>
-                        <p class="text-justify text-truncate para mb-0">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable.<br><br></p>
+                <div class="row p-2 bg border rounded itemComp align-items-center">
+                      <!-- Imagen de la Tarjeta -->
+                    <div class="col-md-3 mt-1">
+                      <img class="img-fluid img-responsive rounded product-image" src="https://como-plantar.com/wp-content/uploads/2021/09/cultivar-y-cuidar-cactus-oreja-de-conejo.jpg.webp">
                     </div>
-                    <div class="align-items-center align-content-center col-md-3 border-left mt-1">
-                        <div class="d-flex flex-row align-items-center">
-                            <h4 class="mr-1">$13.99</h4><span class="strike-text">$20.99</span>
-                        </div>
-                        <h6 class="text-success">Free shipping</h6>
-                        <div class="d-flex flex-column mt-4"><button class="btn btn-primary btn-sm" type="button">Borrar</button><button class="btn btn-outline-primary btn-sm mt-2" type="button">Añadir Detalle</button></div>
-                    </div>
-                </div>
 
-                <div class="row p-2 bg-white border rounded">
-                    <div class="col-md-3 mt-1"><img class="img-fluid img-responsive rounded product-image" src="https://como-plantar.com/wp-content/uploads/2023/01/cuidados-y-como-plantar-begonias.jpg.webp"></div>
-                    <div class="col-md-6 mt-1">
-                        <h5>Begonia</h5>
-                        <div class="d-flex flex-row">
-                            <div class="ratings mr-2"><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i></div><span>310</span>
-                        </div>
-                        <div class="mt-1 mb-1 spec-1"><span>Interios/Exterior</span><span class="dot"></span><span>Pequeña</span><span class="dot"></span><span>Elegante<br></span></div>
-                        <div class="mt-1 mb-1 spec-1"><span>Diseño Unico</span><span class="dot"></span><span>Casa</span><span class="dot"></span><span>Oficina<br></span></div>
-                        <p class="text-justify text-truncate para mb-0">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable.<br><br></p>
+                    <!-- Nombre y Descripción del propducto -->
+                    <div class="col-md-6 mt-1 row informacion">
+                      
+                        <h5 class="d-flex justify-content-start NombreTarjeta">Cactus mini</h5>
+                        <div class=" d-flex justify-content-start mt-1 mb-1 spec-1"><span>Diseño Unico</span><span class="dot"></span><span>Casa</span><span class="dot"></span><span>Oficina<br></span></div>
+                        <p class="justify-content-start text-justify para mb-0">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable.<br><br></p>
                     </div>
-                    <div class="align-items-center align-content-center col-md-3 border-left mt-1">
-                        <div class="d-flex flex-row align-items-center">
-                            <h4 class="mr-1">$13.99</h4><span class="strike-text">$20.99</span>
+
+                    
+                    <!-- Elemntos de precio y botones -->
+                    <div class="align-items-center align-content-center col-md-3 border-left mt-1 row">
+
+                          <div class="d-flex flex-row justify-content-center">
+                              <h1 class="mr-1 precioProducto">$13.99</h1>
+                          </div>
+                          <h6 class="text-success">Free shipping</h6>
+                          <div class="d-flex flex-column mt-4">
+                            <button class="btn btn-primary btn-sm" type="button">Borrar</button>
+                            <div class="row justify-content-around">
+                              <button class="btn  btn-primary btn-sm col-5 mt-2" type="button">Añadir</button>
+                              <button class="btn  btn-primary btn-sm col-5 mt-2" type="button">Restar</button>
+                            </div>
+                         
                         </div>
-                        <h6 class="text-success">Free shipping</h6>
-                        <div class="d-flex flex-column mt-4"><button class="btn btn-primary btn-sm" type="button">Borrar</button><button class="btn btn-outline-primary btn-sm mt-2" type="button">Añadir Detalle</button></div>
                     </div>
+
                 </div>
 
 
             </div>
-        </div>
-        <div class="d-flex flex-row d-flex justify-content-end">
-            <button type="button" class="btn btn-primary btn-lg " id="compra">Comprar</button>
-        </div> 
-    </div>
+            <div class="d-flex flex-row d-flex justify-content-end col-md-10">
 
+              <p id="total">Total a pagar: </p>
+          </div>
+            <div class="d-flex flex-row d-flex justify-content-end col-md-10">
+              <button type="button" class="btn btn-primary btn-lg " id="compra" onclick="window.location.href = './payment.html';">Comprar</button>
+
+          </div>
+          
+        </div>
+        
+    </div>
     
 
     

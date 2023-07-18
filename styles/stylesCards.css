@@ -6,25 +6,20 @@
 .card{
 margin: 1.25rem;
 width: 24.688rem;
-height: 31.25rem;
+height: 50rem;
 border-radius: 1.5rem;
 border: 0.125rem solid #A5D09F;
 background: #A5D09F;
 }
-
-.card2{
-	margin: 1.25rem;	
-	border-radius: 1.5rem;
-	border: 0.125rem solid #A5D09F;
-	background: #A5D09F;
-	}
-
 h1{
     font-family: 'Merriweather', serif;
     color: black;
 }
 button{
     border: none;
+}
+.botonTarjeta{
+ align-items: center;
 }
 
 .img-fluid{
@@ -46,19 +41,16 @@ button{
 	border-bottom-right-radius:1.5rem;
 	position:relative;
 }
-/* .e1_3 { 
-	box-shadow:0rem 0.25rem 0.25rem rgba(0, 0, 0, 0.25);
-	width:24.688rem;
-	height:18.5rem;
-	position:absolute;
-	left:0rem;
-	top:0rem;
-	background-image:url(images/onion.png);
-	background-repeat:no-repeat;
-	background-size:cover;
-    border:0.063rem solid rgba(0, 0, 0, 1);
-} */
 
+.informacionContainer{
+	height: 3.25rem;
+	width: 21.875rem;
+	position:absolute;
+	left:2rem;
+	top:24.375rem;
+  	overflow: clip;
+  	text-overflow: ellipsis;
+}
 .nombreProducto{ 
 	width:18.75rem;
 	height:1.625rem;
@@ -86,14 +78,16 @@ button{
 .decripcion { 
 	color:rgba(109.43750202655792, 109.43750202655792, 109.43750202655792, 1);
 	width:20.125rem;
-	height:1.313rem;
-	position:absolute;
+	height:.2rem;
+	position:static;
 	left:2rem;
 	top:24.625rem;
 	font-family:Montserrat;
 	text-align:left;
 	font-size:1rem;
 	letter-spacing:0;
+	
+	
 }
 .imagenProducto{ 
 	width:27.688rem;
@@ -107,11 +101,12 @@ button{
 	width:10.625rem;
 	height:2.938rem;
 	position:absolute;
-	left:8.063rem;
-	top:27.125rem;
+	left:6.9rem;
+	top:27.813rem;
     font-family:Merriweather;
     color: white;
-   
-    
 }
 
+#text{
+	text-overflow: clip;
+}
