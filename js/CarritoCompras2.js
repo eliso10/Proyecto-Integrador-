@@ -1,5 +1,6 @@
 const mainContainerTarjetas = document.getElementById('elementosCarritos');
 const spanCarrito = document.getElementById('carritoIcon');
+const total = document.getElementById('total');
 //var badge = document.createElement('span');
 import * as dateBase from "./base_Datos.js";
 
@@ -17,6 +18,15 @@ function contadorCarrito(){
     spanCarrito.appendChild(badge); 
     localStorage.setItem('carrito', JSON.stringify(carrito));
     carrito = JSON.parse(localStorage.getItem('carrito'));
+}
+
+function renderTotal(){
+    var totalPrecio= 0;
+    carrito.forEach(producto => {
+        totalPrecio += (producto.precio*producto.cantidad);
+        console.log(producto.precio)
+        });
+    total.textContent = "Total a pagar: "+totalPrecio;
 }
 
 
@@ -47,6 +57,7 @@ mainContainerTarjetas.addEventListener('click', e => {
         eliminarCarrito(infoProduct.id);
         console.log(carrito);
         RenderCarrito();
+        renderTotal();
         localStorage.setItem('carrito', JSON.stringify(carrito));
         carrito = JSON.parse(localStorage.getItem('carrito'));
     }
@@ -86,6 +97,7 @@ mainContainerTarjetas.addEventListener('click', e => {
         }
        // console.log(infoProduct);
         RenderCarrito();
+        renderTotal();
         localStorage.setItem('carrito', JSON.stringify(carrito));
         carrito = JSON.parse(localStorage.getItem('carrito'));
         
@@ -118,6 +130,7 @@ mainContainerTarjetas.addEventListener('click', e => {
         }
         console.log(infoProduct);
         RenderCarrito();
+        renderTotal();
         localStorage.setItem('carrito', JSON.stringify(carrito));
         carrito = JSON.parse(localStorage.getItem('carrito'));
     }
@@ -260,7 +273,8 @@ carrito.forEach(compra => {
     mainContainerTarjetas.appendChild(mainContainer);
 
     });
+    contadorCarrito()
 }
-
+renderTotal()
 RenderCarrito();
 contadorCarrito();
