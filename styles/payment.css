@@ -76,3 +76,9 @@ body {
     border: solid #554111;
   }
   
+/* Estilo propio de payment */
+.form-select {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  padding: 0.8rem 0rem 0.8rem 0.7rem;
+}
