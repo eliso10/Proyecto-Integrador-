@@ -18,6 +18,14 @@ p{
     text-align: justify;
 }
 
+.carritoContador {
+    height: 25px;
+    width: 25px;
+    color: red;
+    border-radius: 50%;
+    display: inline-block;
+    position: static;
+  }
 
 .itemComp{
     margin-top: 2rem;
@@ -95,7 +103,7 @@ body{
     margin-left: 6px;
     margin-right: 6px;
     margin-top: 3px;
-    background-color: blue;
+    background-color: red;
     border-radius: 50%;
     display: inline-block;
 }

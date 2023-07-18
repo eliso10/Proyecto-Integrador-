@@ -204,7 +204,11 @@ var herramientas =[
     },
 ]
 
-//carrito =[];
+var carrito =[]
+
+
+
+
 
 //Buscar elementos en la BD de herramientas
 function buscarHerramientas(idHerramienta){
@@ -230,7 +234,7 @@ function buscarMacetas(idMacetas){
     return result;
 }
 
-function añadirPlanta(nombre, url, precio, descripcion){
+export  function añadirPlanta(nombre, url, precio, descripcion){
     let lastKey = Object.keys(plantas).pop();
     lastKey++;
     lastKey++;
@@ -238,19 +242,51 @@ function añadirPlanta(nombre, url, precio, descripcion){
 }
 
 
-function añadirMacetas(nombre, url, precio, descripcion){
+export function añadirMacetas(nombre, url, precio, descripcion){
     let lastKey = Object.keys(macetas).pop();
     lastKey++;
     lastKey++;
     herramientas.push({'id': lastKey ,'nombre' : nombre, 'url': url, 'precio': precio, 'descripcion': descripcion}); 
 }
 
-function añadirHerramientas(nombre, url, precio, descripcion){
+export function añadirHerramientas(nombre, url, precio, descripcion){
     let lastKey = Object.keys(herramientas).pop();
     lastKey++;
     lastKey++;
     herramientas.push({'id': lastKey ,'nombre' : nombre, 'url': url, 'precio': precio, 'descripcion': descripcion}); 
 }
+
+export function añadirCarrito(producto){
+
+    const isFound = carrito.some(element => {
+        if (element.id === producto.id) {
+        return true;
+        }
+        else return false;
+    });
+
+    if (isFound == false){
+        carrito.push(producto)
+        producto.cantidad = 1; 
+    } 
+    else{ 
+        console.log("This item already exists");
+        const index = carrito.findIndex(object => {
+            return object.id === producto.id;
+          });
+        carrito[index].cantidad++;
+    }
+   
+   
+    localStorage.setItem('carrito', JSON.stringify(carrito));
+    carrito = JSON.parse(localStorage.getItem('carrito'));
+    console.log(carrito);
+}
+
+
+
+console.log(carrito);
+
 
 añadirHerramientas("Martillo", 'https://www.hm.supply/products/martillo-una', 'https://www.hm.supply/products/martillo-una', 300.00, 'ciowjiefmwinfiwniiniun');
 
@@ -264,4 +300,4 @@ console.log(herramientas);
 export {plantas}; 
 export {macetas}; 
 export {herramientas};
-//export {carrito};
+export {carrito};
