@@ -1,5 +1,6 @@
 const containerCards = document.getElementById('container-cards');
 
+
 import {loMasPedido} from './base_Datos_CP.js'
 import {buscarloMasPedidoname} from './base_Datos_CP.js'
 
@@ -46,6 +47,7 @@ const renderElements = (elements, card, producto) => {
     img.alt = "Responsive image";
     
     card.children[0].append(img);
+
     /* modificación para estilos de tarjetas, se creó constante information */
     elements.descripcion.classList.add('text-justify');
     const information = document.createElement('div');
@@ -61,6 +63,7 @@ loMasPedido.forEach(producto => {
     const populatedElements = populateElements(elementsProduct, producto);
     renderElements(populatedElements, card, producto);
     containerCards.appendChild(card);
+
 });
 
 containerCards.addEventListener('click', e => {

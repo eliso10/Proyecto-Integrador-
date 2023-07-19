@@ -7,23 +7,12 @@ body {
 
 #sobreNosotros {
     font-family: 'Merriweather', serif;
-    align-items: center;
-    background-color: #A5D09F;
-    height: 150px;
-    text-align:center;
-    color: #815636;
-    
-}
-
-#about-us{
-    margin-top: 57px;
-    
+    text-align: center;
+    color: #EFE9E7;
+    background-color: #815636;
 }
 
 
-.misionVision{
-    margin: 1.8rem;
-}
 
 .contenedor-texto{
     background-color: #EFE9E7;
@@ -33,11 +22,11 @@ body {
 
 .titles {
     font-family: 'Merriweather', serif;
-    color: #815636;
+    color: #000000;
     
 }
 
-p {
+#parrafo {
     font-family: 'Montserrat', sans-serif;
     color: black;
 }
@@ -45,7 +34,7 @@ p {
 
 #titulos {
     font-family: 'Merriweather', serif;
-    color: #815636;
+    color: #000000;
     text-align:center;
 }
 

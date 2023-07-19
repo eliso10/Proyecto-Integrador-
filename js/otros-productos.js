@@ -1,7 +1,6 @@
 const containerCards = document.getElementById('container-cards');
 
-import {macetas} from './base_Datos_CP.js'
-import { buscarMacetasname } from './base_Datos_CP.js';
+import {herramientas} from './base_Datos.js'
 
 const createCard = () => {
     const card = document.createElement('div');
@@ -46,36 +45,14 @@ const renderElements = (elements, card, pot) => {
     img.alt = "Responsive image";
     
     card.children[0].append(img);
-
-    card.children[0].append(img);
-    /* modificación para estilos de tarjetas, se creó constante information */
-    elements.descripcion.classList.add('text-justify');
-    const information = document.createElement('div');
-    information.classList.add('informacionContainer')
-    information.append( elements.descripcion);
-    card.children[1].append(elements.nombre, elements.precio, information, elements.button);
+    card.children[1].append(elements.nombre, elements.descripcion, elements.precio, elements.button);
 }
 
 
-macetas.forEach(pot => {
+herramientas.forEach(pot => {
     const card = createCard();
     const elementsPot = createDescription();
     const populatedElements = populateElements(elementsPot, pot);
     renderElements(populatedElements, card, pot);
     containerCards.appendChild(card);
-});
-
-containerCards.addEventListener('click', e => {
-    if(e.target.classList.contains('botonTarjeta') ){
-        const productoTarjeta = e.target.parentElement;
-        console.log(productoTarjeta);
-
-        // //En caso de ser necesario creó un onjeto de java desde el arreglo directo
-        const infoProduct = (productoTarjeta.querySelector('.nombreProducto').textContent);
-        console.log(infoProduct);
-        const elementoBD = buscarMacetasname(infoProduct);
-        console.log(elementoBD);
-        
-        
-    }
 });
