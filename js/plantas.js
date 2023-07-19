@@ -1,8 +1,10 @@
 // const plantas = require('./data_pruebas');
 const containerCards = document.getElementById('container-cards');
 
-import {plantas} from './base_Datos_CP.js'
-import {buscarPlantasname} from './base_Datos_CP.js'
+import {plantas} from './base_Datos.js'
+import {buscarPlantasname} from './base_Datos.js'
+import {contadorCarrito} from './carritoSpan.js'
+import * as dateBase from "./base_Datos.js";
 
 
 const createCard = () => {
@@ -48,12 +50,11 @@ const renderElements = (elements, card, planta) => {
     img.alt = "Responsive image";
     
     card.children[0].append(img);
-    /* modificación para estilos de tarjetas, se creó constante information */
     elements.descripcion.classList.add('text-justify');
-    const information = document.createElement('div');
-    information.classList.add('informacionContainer')
-    information.append( elements.descripcion);
-    card.children[1].append(elements.nombre, elements.precio, information, elements.button);
+    const información = document.createElement('div');
+    información.classList.add('informacionContainer')
+    información.append( elements.descripcion);
+    card.children[1].append(elements.nombre,  elements.precio, información, elements.button);
 }
 
 
@@ -70,12 +71,16 @@ containerCards.addEventListener('click', e => {
     if(e.target.classList.contains('botonTarjeta') ){
         const productoTarjeta = e.target.parentElement;
         console.log(productoTarjeta);
+        console.log(productoTarjeta.querySelector('.nombreProducto').textContent);
 
-        // //En caso de ser necesario creó un onjeto de java desde el arreglo directo
+
+        // //En caso de ser necesario creó un objeto de java desde el arreglo directo
         const infoProduct = (productoTarjeta.querySelector('.nombreProducto').textContent);
         console.log(infoProduct);
         const elementoBD = buscarPlantasname(infoProduct);
-        console.log(elementoBD);
-   
+        console.log(typeof(elementoBD));
+        dateBase.añadirCarrito(elementoBD);
+        contadorCarrito();
+    
     }
 });

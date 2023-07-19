@@ -306,12 +306,10 @@ export function añadirCarrito(producto){
         carrito[index].cantidad++;
     }
    
-   
     localStorage.setItem('carrito', JSON.stringify(carrito));
     carrito = JSON.parse(localStorage.getItem('carrito'));
     console.log(carrito);
 }
-
 
 
 console.log(carrito);

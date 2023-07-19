@@ -2,6 +2,7 @@ const containerCards = document.getElementById('container-cards');
 
 import {herramientas} from './base_Datos_CP.js'
 import { buscarHerramientasname } from './base_Datos_CP.js';
+import * as dateBase from "./base_Datos.js";
 
 const createCard = () => {
     const card = document.createElement('div');
@@ -74,6 +75,6 @@ containerCards.addEventListener('click', e => {
         console.log(infoProduct);
         const elementoBD = buscarHerramientasname(infoProduct);
         console.log(elementoBD);
-   
+        dateBase.añadirCarrito(elementoBD);
     }
 });

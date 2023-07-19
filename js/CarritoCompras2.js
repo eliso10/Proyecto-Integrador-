@@ -5,10 +5,8 @@ const total = document.getElementById('total');
 //var badge = document.createElement('span');
 import * as dateBase from "./base_Datos.js";
 
-var carrito = JSON.parse(localStorage.getItem('carrito'));
+let carrito = JSON.parse(localStorage.getItem('carrito'));
 
-console.log(dateBase.carrito);
-console.log(carrito);
 
 // FUNCION PARA CONTADOR DEL CARRITO
 function contadorCarrito(){

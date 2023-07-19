@@ -3,6 +3,8 @@ const containerCards = document.getElementById('container-cards');
 
 import {loMasPedido} from './base_Datos_CP.js'
 import {buscarloMasPedidoname} from './base_Datos_CP.js'
+import {añadirCarrito} from "./base_Datos.js";
+import {contadorCarrito} from "./carritoSpan.js";
 
 const createCard = () => {
     const card = document.createElement('div');
@@ -76,7 +78,9 @@ containerCards.addEventListener('click', e => {
         console.log(infoProduct);
         const elementoBD = buscarloMasPedidoname(infoProduct);
         console.log(elementoBD);
-        
+        console.log(typeof(elementoBD));
+        añadirCarrito(elementoBD);
+        contadorCarrito();
     }
 
 });

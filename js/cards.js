@@ -7,22 +7,6 @@ import {buscarPlantasname} from './base_Datos.js'
 import * as dateBase from "./base_Datos.js";
 
 
-//const plantas = require('./data_pruebas') ;
-
-// const getPlantas = () => {
-//     return plantas;
-// }
-
-// const getPlanta = id => {
-//     return plantas.find(plantas => plantas.id === id)
-// }
-
-// console.log(getPlantas());
-// console.log(getPlanta(1));
-
-
-
-
 const createCard = () => {
     const card = document.createElement('div');
     const imgContainer = document.createElement('div');
@@ -100,31 +84,3 @@ containerCards.addEventListener('click', e => {
     
     }
 });
-
-
-  
-    //     const containerProduct = document.createElement('div'); 
-    //     containerProduct.setAttribute('class', 'row p-2 bg border rounded itemComp align-items-center');
-
-    //     containerProduct.innerHTML = '<div class="col-md-3 mt-1">'+
-    //     '<img class="img-fluid img-responsive rounded product-image" src="https://como-plantar.com/wp-content/uploads/2021/09/cultivar-y-cuidar-cactus-oreja-de-conejo.jpg.webp">'+
-    //             '</div>'+
-    //             '<div class="col-md-6 mt-1 row informacion">'+
-    //                 '<h5 class="d-flex justify-content-start NombreTarjeta">Cactus mini</h5>'+
-    //                 '<div class=" d-flex justify-content-start mt-1 mb-1 spec-1"><span>Diseño Unico</span><span class="dot"></span><span>Casa</span><span class="dot"></span><span>Oficina<br></span></div>'+
-    //                 '<p class="justify-content-start text-justify para mb-0">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which dont look even slightly believable.<br><br></p>'+
-    //             '</div>'+
-    //             '<div class="align-items-center align-content-center  col-md-3 border-left mt-1 row">'+
-    //                     '<div class="d-flex flex-row justify-content-center">'+
-    //                         '<h1 class="mr-1">$13.99</h1>'+
-    //                     '</div>'+
-    //                     '<h6 class="text-success">Free shipping</h6>'+
-    //                     '<div class="d-flex flex-column mt-4">'+
-    //                     '<button class="btn btn-primary btn-sm" type="button">Borrar</button>'+
-    //                     '<div class="row justify-content-around">'+
-    //                         '<button class="btn  btn-primary btn-sm col-5 mt-2" type="button">Añadir</button>'+
-    //                         '<button class="btn  btn-primary btn-sm col-5 mt-2" type="button">Restar</button>'+
-    //                     '</div>'+
-    //                 '</div>'+
-    //             '</div>';
-    // mainContainerTarjetas.appendChild(containerProduct);

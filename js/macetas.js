@@ -3,6 +3,7 @@ const containerCards = document.getElementById('container-cards');
 
 import {macetas} from './base_Datos_CP.js'
 import { buscarMacetasname } from './base_Datos_CP.js';
+import * as dateBase from "./base_Datos.js";
 
 const createCard = () => {
     const card = document.createElement('div');
@@ -76,7 +77,7 @@ containerCards.addEventListener('click', e => {
         console.log(infoProduct);
         const elementoBD = buscarMacetasname(infoProduct);
         console.log(elementoBD);
-        
+        dateBase.añadirCarrito(elementoBD);
         
     }
 });
