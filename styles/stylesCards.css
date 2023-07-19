@@ -11,6 +11,7 @@ border-radius: 1.5rem;
 border: 0.125rem solid #A5D09F;
 background: #A5D09F;
 }
+
 h1{
     font-family: 'Merriweather', serif;
     color: black;
@@ -109,4 +110,9 @@ button{
 
 #text{
 	text-overflow: clip;
+}
+
+.botonTarjeta:hover { 
+	transform: scale(1.15);
+	transition: all 0.3s;
 }

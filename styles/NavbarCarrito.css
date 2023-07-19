@@ -1,4 +1,3 @@
-
 /*todo esto corresponde a los estilos del Navbar*/
 #navbarNav,
 .container-fluid {
@@ -21,12 +20,11 @@
   width: 2rem;
   height: 2rem;
 }
-.navbar {
-
-  padding: 0;
+#navbarPrincipal {
+    padding-top: 0px;
+    padding-bottom: 0px;
 
 }
-
 
 .nav-link {
   font-family: 'Montserrat', sans-serif;
@@ -42,9 +40,30 @@
 
 #footer {
   background-color:#A5D09F ;
-  margin-top : 5rem;
+  margin-top : 0rem;
 }
 
+#iconos-redes {
+  height: 4rem ;
+  width: 4rem ;
+  margin-top: 1rem;
+}
+
+.nav-item{
+  background-color: #679436;
+}
+
+.rounded-circle{
+  background-color: #679436;
+}
+
+#iconoCarrito{
+  background-color: #679436;
+}
+
+#titulo, #llevas-todo{
+  background-color: #679436;
+}
 
 .titulo_Navbar{
   color: black;

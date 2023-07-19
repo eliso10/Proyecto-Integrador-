@@ -26,7 +26,6 @@ body {
     font-size: 1.5rem;
 }
 
-
 #tarjetas{
     text-align: center;
     background-color: #A5D09F;
@@ -59,7 +58,9 @@ body {
 .card{
     margin: 1.25rem;
     width: 24.688rem;
+
     height: 50rem;
+
     border-radius: 1.5rem;
     border: 0.125rem solid #A5D09F;
     background: #A5D09F;
@@ -75,12 +76,12 @@ body {
         height:18.438rem;
     }
     
+
     #container-cards{
         display: flex;
         justify-content: center;
         align-items: center;
     }
-
     .tarjetaContenedor { 
         overflow:hidden;
         border: 0.125rem solid rgba(165.00000536441803, 208.0000028014183, 159.0000057220459, 1);
@@ -94,6 +95,7 @@ body {
         border-bottom-right-radius:1.5rem;
         position:relative;
     }
+
 /* Se agrega para estilos de product cards*/
     .informacionContainer{
         height: 3.25rem;
@@ -132,8 +134,10 @@ body {
     .decripcion { 
         color:rgba(109.43750202655792, 109.43750202655792, 109.43750202655792, 1);
         width:20.125rem;
+
         height:2rem;
         position:static;
+
         left:2rem;
         top:24.625rem;
         font-family:Montserrat;

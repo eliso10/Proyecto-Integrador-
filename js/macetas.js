@@ -1,5 +1,6 @@
 const containerCards = document.getElementById('container-cards');
 
+
 import {macetas} from './base_Datos_CP.js'
 import { buscarMacetasname } from './base_Datos_CP.js';
 

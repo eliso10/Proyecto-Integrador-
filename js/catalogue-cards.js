@@ -78,4 +78,5 @@ containerCards.addEventListener('click', e => {
         console.log(elementoBD);
         
     }
+
 });
