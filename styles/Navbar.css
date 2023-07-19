@@ -1,3 +1,4 @@
+
 /*todo esto corresponde a los estilos del Navbar*/
 #navbarNav,
 .container-fluid {
@@ -26,6 +27,7 @@
 
 }
 
+
 .nav-link {
   font-family: 'Montserrat', sans-serif;
   font-size: medium;
@@ -43,8 +45,7 @@
   margin-top : 5rem;
 }
 
-#iconos-redes {
-  height: 4rem ;
-  width: 4rem ;
-  margin-top: 1rem;
+
+.titulo_Navbar{
+  color: black;
 }
