@@ -1,0 +1,57 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@900&family=Montserrat:wght@500&display=swap');
+
+body {
+    background-color: #EFE9E7;
+}
+
+.EncabezadoPI{
+    background-color: #A5D09F;
+}
+
+#parrafo-pam{
+    background-color: #A5D09F;
+    font-family: 'Montserrat', serif;
+}
+
+.button-pam{
+    border-radius: 13px;
+    color: #000000;
+    font-size: 22px;
+    
+}
+
+#titulo-encabezado-PI{
+    font-family: 'Merriweather', serif;
+    text-align: center;
+    color: #EFE9E7;
+    background-color: #815636;
+}
+
+#titulo-pill{
+    font-family: 'Merriweather', serif;
+    color: #000000;
+}
+
+#titulos {
+    font-family: 'Merriweather', serif;
+}
+
+#parrafo {
+    font-family: 'Montserrat', serif;
+    color: #000000;
+}
+
+#parrafoPI {
+    font-family: 'Montserrat', serif;
+    color: #ffffff;
+}
+
+#icono{
+    height: 115px;
+    width: 115px;
+    padding: 15px;
+}
+
+#cont-t{
+    background-color: #A5D09F;
+}

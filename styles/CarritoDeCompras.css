@@ -15,7 +15,7 @@
 } */
 
 p{
-    text-align: justify;
+    text-align: center;
 }
 
 .carritoContador {
@@ -70,6 +70,7 @@ p{
     margin:0;
     font-family: 'Merriweather', serif;
     font-size:1.7rem;
+    text-align: center;
 }
 #titulo{
     font-family: 'Merriweather', serif;
@@ -117,4 +118,30 @@ h5{
 }
 .para{
     font-size: 16px
+}
+
+#total{
+    font-size: 2.5rem;
+    font-family: 'Merriweather', serif;
+}
+
+#footer {
+    background-color:#A5D09F ;
+    margin-top : 5rem;
+  }
+
+.botonTarjeta { 
+	background-color:rgba(103.0000014603138, 148.000006377697, 54.00000058114529, 1);
+    color: white;
+    border: none;
+    margin: none;
+    font-size: 1rem;
+    border-radius: .5rem;
+    box-shadow: rgba(60, 64, 67, .3) 0 1px 3px 0, rgba(60, 64, 67, .15) 0 4px 8px 3px;
+   
+}
+
+.botonTarjeta:hover {
+  background: #A5D09F;
+  color: white;
 }

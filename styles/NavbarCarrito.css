@@ -20,9 +20,9 @@
   width: 2rem;
   height: 2rem;
 }
-.navbar {
-
-  padding: 0;
+#navbarPrincipal {
+    padding-top: 0px;
+    padding-bottom: 0px;
 
 }
 
@@ -40,11 +40,31 @@
 
 #footer {
   background-color:#A5D09F ;
-  margin-top : 5rem;
+  margin-top : 0rem;
 }
 
 #iconos-redes {
   height: 4rem ;
   width: 4rem ;
   margin-top: 1rem;
+}
+
+.nav-item{
+  background-color: #679436;
+}
+
+.rounded-circle{
+  background-color: #679436;
+}
+
+#iconoCarrito{
+  background-color: #679436;
+}
+
+#titulo, #llevas-todo{
+  background-color: #679436;
+}
+
+.titulo_Navbar{
+  color: black;
 }
