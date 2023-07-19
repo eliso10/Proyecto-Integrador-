@@ -10,11 +10,15 @@ console.log(carrito);
 
 // FUNCION PARA CONTADOR DEL CARRITO
 export function contadorCarrito(){
+    spanCarrito.innerHTML = "";
+    var imgCarrito = document.createElement('IMG');
+    imgCarrito.setAttribute('src', '../assets/icons/iconoCarrito.png');
+    imgCarrito.setAttribute('id', 'iconoCarrito');
     let badge = document.createElement('span');
     badge.classList.add('position-absolute', 'translate-middle', 'badge', 'rounded-pill', 'bg-danger');
     badge.setAttribute('id', 'carritoContador');
     badge.textContent = carrito.length;
-    spanCarrito.appendChild(badge); 
+    spanCarrito.append(imgCarrito, badge); 
 }
 
 contadorCarrito();

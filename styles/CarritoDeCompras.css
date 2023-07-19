@@ -7,7 +7,6 @@
 }
 
 #CDC{
-    color: black;
     text-decoration: none;
 }
 
@@ -65,7 +64,7 @@ p{
 }
 
 .items-secundario{
-    height: 3rem;
+    height: 0rem;
     
     font-family: 'Montserrat';
     font-size:1rem;
@@ -134,13 +133,9 @@ h5{
 
 #total{
     
-    font-family: 'Merriweather', serif;
+    font-family: 'Montserrat';
+    font-size: 1.5rem; 
 }
-
-#footer {
-    background-color:#A5D09F ;
-    margin-top : 5rem;
-  }
 
 .botonTarjeta { 
 	background-color:rgba(103.0000014603138, 148.000006377697, 54.00000058114529, 1);
@@ -156,5 +151,9 @@ h5{
 .botonTarjeta:hover {
   background: #A5D09F;
   color: white;
+}
+
+.secundario{
+    height: 0;
 }
 

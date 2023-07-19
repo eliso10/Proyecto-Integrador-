@@ -9,6 +9,7 @@
 
 .title {
   margin-left: 1rem;
+  color: rgb(29, 26, 26);
   font-family: 'Merriweather', serif;
   text-decoration: none;
   margin-right: 5rem;
@@ -18,27 +19,31 @@
 #iconoCarrito{
   width: 2rem;
   height: 2rem;
+  
 }
+
 #navbarPrincipal {
     padding-top: 0px;
     padding-bottom: 0px;
-
 }
 
 .nav-link {
   font-family: 'Montserrat', sans-serif;
   font-size: medium;
   margin-top: 0.5rem;
-
+  margin-right: .5rem;
 }
 
 .nav-link:hover, .title:hover {
   color: #EFE9E7;
 }
+nav-item:hover, .title:hover {
+  color: #EFE9E7;
+}
 /*hasta aqui terminan los estilos del navbar*/
 
 #footer {
-  background-color:#A5D09F ;
+  background-color:#679436;
   margin-top : 0rem;
 }
 
@@ -70,4 +75,8 @@
 
 #fondo{
     border-color: #EFE9E7;
+}
+
+#compra{
+  margin-bottom: 1rem
 }

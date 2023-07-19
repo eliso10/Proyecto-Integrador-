@@ -287,6 +287,8 @@ export function añadirHerramientas(nombre, url, precio, descripcion){
 
 export function añadirCarrito(producto){
 
+    carrito = JSON.parse(localStorage.getItem('carrito'));
+
     const isFound = carrito.some(element => {
         if (element.id === producto.id) {
         return true;
@@ -307,7 +309,7 @@ export function añadirCarrito(producto){
     }
    
     localStorage.setItem('carrito', JSON.stringify(carrito));
-    carrito = JSON.parse(localStorage.getItem('carrito'));
+    
     console.log(carrito);
 }
 
