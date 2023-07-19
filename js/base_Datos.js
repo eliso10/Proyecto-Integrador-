@@ -325,7 +325,7 @@ console.log(herramientas);
 
 herramientas.push({'id': 1 ,'nombre' :'Manguera de Riego', 'url': 'https://plasticforte.com/wp-content/uploads/2022/06/accesorios-jardineria-plasticforte.jpg', 'precio': 500.00, 'descripcion': 'Para que tus plantas queden perfectamente regadas utiliza nuestra manguera con soporte a pared'});
 console.log(herramientas);
-*/
+
 export {plantas}; 
 export {macetas}; 
 export {herramientas};

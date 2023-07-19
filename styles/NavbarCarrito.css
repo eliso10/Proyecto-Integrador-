@@ -68,3 +68,9 @@
 .titulo_Navbar{
   color: black;
 }
+
+/* cambios en el  estilo para el carrito de compras */
+
+#fondo{
+    border-color: #EFE9E7;
+}
