@@ -9,7 +9,6 @@
 
 .title {
   margin-left: 1rem;
-  color: rgb(29, 26, 26);
   font-family: 'Merriweather', serif;
   text-decoration: none;
   margin-right: 5rem;
@@ -62,11 +61,8 @@
 }
 
 #titulo, #llevas-todo{
-  background-color: #679436;
-}
-
-.titulo_Navbar{
-  color: black;
+  background-color: #815636;
+  color: white;
 }
 
 /* cambios en el  estilo para el carrito de compras */

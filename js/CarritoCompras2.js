@@ -166,7 +166,7 @@ const RenderCarrito = () => {
 carrito.forEach(compra => {
   
     const mainContainer = document.createElement('DIV');
-    mainContainer.setAttribute('class', 'row p-2 bg border rounded itemComp align-items-center');
+    mainContainer.setAttribute('class', 'row p-2 bg rounded itemComp align-items-center');
     
     const imagenContainer = document.createElement('DIV');
     imagenContainer.setAttribute('class', 'col-md-3 mt-1');
@@ -239,7 +239,7 @@ carrito.forEach(compra => {
     containerMoney.setAttribute('class', 'd-flex flex-row justify-content-center');
     containerDerecho.appendChild(containerMoney);
     
-    const precio = document.createElement('H1');
+    const precio = document.createElement('h2');
     precio.setAttribute('class', 'mr-1 precioProducto');
     precio.textContent = "$"+compra.precio*compra.cantidad;
     containerMoney.appendChild(precio);
