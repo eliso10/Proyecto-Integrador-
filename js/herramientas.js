@@ -1,7 +1,7 @@
 const containerCards = document.getElementById('container-cards');
 
-import {macetas} from './base_Datos_CP.js'
-import { buscarMacetasname } from './base_Datos_CP.js';
+import {herramientas} from './base_Datos_CP.js'
+import { buscarHerramientasname } from './base_Datos_CP.js';
 
 const createCard = () => {
     const card = document.createElement('div');
@@ -46,7 +46,6 @@ const renderElements = (elements, card, pot) => {
     img.alt = "Responsive image";
     
     card.children[0].append(img);
-
     card.children[0].append(img);
     /* modificación para estilos de tarjetas, se creó constante information */
     elements.descripcion.classList.add('text-justify');
@@ -57,7 +56,7 @@ const renderElements = (elements, card, pot) => {
 }
 
 
-macetas.forEach(pot => {
+herramientas.forEach(pot => {
     const card = createCard();
     const elementsPot = createDescription();
     const populatedElements = populateElements(elementsPot, pot);
@@ -73,9 +72,8 @@ containerCards.addEventListener('click', e => {
         // //En caso de ser necesario creó un onjeto de java desde el arreglo directo
         const infoProduct = (productoTarjeta.querySelector('.nombreProducto').textContent);
         console.log(infoProduct);
-        const elementoBD = buscarMacetasname(infoProduct);
+        const elementoBD = buscarHerramientasname(infoProduct);
         console.log(elementoBD);
-        
-        
+   
     }
 });
