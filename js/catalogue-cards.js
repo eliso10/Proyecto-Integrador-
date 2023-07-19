@@ -1,6 +1,8 @@
 const containerCards = document.getElementById('container-cards');
 
-import {loMasPedido} from './base_Datos.js'
+
+import {loMasPedido} from './base_Datos_CP.js'
+import {buscarloMasPedidoname} from './base_Datos_CP.js'
 
 const createCard = () => {
     const card = document.createElement('div');
@@ -45,7 +47,13 @@ const renderElements = (elements, card, producto) => {
     img.alt = "Responsive image";
     
     card.children[0].append(img);
-    card.children[1].append(elements.nombre, elements.descripcion, elements.precio, elements.button);
+
+    /* modificación para estilos de tarjetas, se creó constante information */
+    elements.descripcion.classList.add('text-justify');
+    const information = document.createElement('div');
+    information.classList.add('informacionContainer')
+    information.append( elements.descripcion);
+    card.children[1].append(elements.nombre, elements.precio, information, elements.button);
 }
 
 
@@ -55,4 +63,19 @@ loMasPedido.forEach(producto => {
     const populatedElements = populateElements(elementsProduct, producto);
     renderElements(populatedElements, card, producto);
     containerCards.appendChild(card);
+
+});
+
+containerCards.addEventListener('click', e => {
+    if(e.target.classList.contains('botonTarjeta') ){
+        const productoTarjeta = e.target.parentElement;
+        console.log(productoTarjeta);
+
+        // //En caso de ser necesario se creo un objeto de java desde el arreglo directo
+        const infoProduct = (productoTarjeta.querySelector('.nombreProducto').textContent);
+        console.log(infoProduct);
+        const elementoBD = buscarloMasPedidoname(infoProduct);
+        console.log(elementoBD);
+        
+    }
 });
