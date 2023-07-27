@@ -80,43 +80,44 @@
           </div>
 
         <!-- Inicia formulario -->
+        method: 'post'
           <div class="card-body p-4 p-sm-5">
             <h5 class="titulos card-title text-center mb-5 fw-light " id="Registrate_titulo">Registrarse</h5>
             <form id="signUp" novalidate>
               <div class="row mb-3">
                 <div class="form-floating col-6">
-                    <input type="username" name="Nombre" class="form-control" id="floatingName" placeholder="Name" required>
+                    <input type="username" name="name" class="form-control" id="floatingName" placeholder="Name" required>
                     <label for="floatingName" id="text_label_Nom_Ape">Nombre</label>
                 </div>
                 <div class="form-floating col-6">
-                    <input type="username" name="Apellido" class="form-control" id="floatingLastName" placeholder="LastName" required>
+                    <input type="username" name="last_name" class="form-control" id="floatingLastName" placeholder="LastName" required>
                     <label for="floatingLastName" id="text_label_Nom_Ape">Apellido</label>
                 </div>
               </div>
 
               <div class="form-floating mb-3">
-                  <input type="email" name="E-mail" class="form-control"  id="floatingInputEmail" placeholder="name@example.com" required>
+                  <input type="email" name="email" class="form-control"  id="floatingInputEmail" placeholder="name@example.com" required>
                   <label for="floatingInputEmail">Correo electronico</label>
               </div> 
 
               <div class="form-floating mb-3">
-                  <input type="email" name="E-mail" class="form-control"  id="floatingInputEmailConfirm" placeholder="name@example.com" required>
+                  <input type="email" name="email" class="form-control"  id="floatingInputEmailConfirm" placeholder="name@example.com" required>
                   <label for="floatingInputEmailConfirm">Confirmar correo electronico</label>
               </div>
 
               <div class="form-floating mb-3">
-                  <input type="username" name="Usuario" class="form-control" id="floatingUserName" placeholder="Nombre de usuario" required>
+                  <input type="username" name="username" class="form-control" id="floatingUserName" placeholder="Nombre de usuario" required>
                   <label for="floatingUserName">Nombre de usuario</label>
               </div>
                   
               <div class="form-floating mb-3">
-                  <input type="tel" name="Número telefónico" class="form-control"  id="floatingInputCel" placeholder="Número de teléfono" required>
+                  <input type="tel" name="telephone" class="form-control"  id="floatingInputCel" placeholder="Número de teléfono" required>
                   <label for="floatingInputCel">Número telefónico</label>
                   <p class="description">A 10 dígitos</p>
               </div>
 
               <div class="form-floating mb-3">
-                  <input type="password" name="Contraseña" class="form-control" id="floatingPassword" placeholder="Password"required>
+                  <input type="password" name="password" class="form-control" id="floatingPassword" placeholder="Password"required>
                   <label for="floatingPassword">Contraseña</label>
                   <p class="description">Mínimo 8 caracteres: al menos un número, un símbolo, una mayúscula y una minúscula</p>
               </div>

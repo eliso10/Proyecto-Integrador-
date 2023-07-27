@@ -80,16 +80,17 @@
             <div class="vr" ></div>
           </div>
           <!-- Inicia formulario -->
+          method: 'get'
           <div class="card-body p-4 p-sm-5">
             <h5 class="titulos card-title text-center mb-5 fw-light " id="IniciaSesion_titulo">INICIAR SESIÓN</h5>
             <form id="logIn" novalidate>
               <div class="row mb-3"></div>
                 <div class="form-floating mb-3">
-                  <input type="email" name="E-mail" class="form-control" id="floatingInputEmail" placeholder="name@example.com" required>
+                  <input type="email" name="email" class="form-control" id="floatingInputEmail" placeholder="name@example.com" required>
                   <label for="floatingInputEmail">Correo electrónico</label>
                   <hr>
                   <div class="form-floating mb-3">
-                    <input type="password" name="Contraseña" class="form-control" id="floatingPassword" placeholder="Password" required>
+                    <input type="password" name="password" class="form-control" id="floatingPassword" placeholder="Password" required>
                     <label for="floatingPassword">Contraseña</label>
                   </div>
 
