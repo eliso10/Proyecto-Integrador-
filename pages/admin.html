@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styless.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@200&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/styles/index.css">
+    <title>Admin</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+</head>
+
+<body>
+
+    <nav id="navbar" class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+          <div class="logo">
+            <a class="navbar-brand" href="/index.html">
+              <img src="../assets/icons/Plantas_reyes_LOGOS-09.png" alt="PlantasReyes" width="30" height="24">
+            </a>
+          </div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href=".  /contactanos.html">Contactanos</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="./sobre-nosotros.html">Acerca De Nosotros</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="./pAM.html">Proyecto A La Medida</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="./catalogo.html">Catalogo De Productos</a>
+              </li>
+
+              <!--menu desplegable-->
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Iniciar Sesion
+                </a>
+                <ul id="dropdown" class="dropdown-menu">
+                  <li><a class="dropdown-item" href="./login.html">Iniciar sesion</a></li>
+                  <li><a class="dropdown-item" href="./signup.html">registrate</a></li>
+                </ul>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#"><i class="bi bi-cart4" ></i></a>
+              </li>
+
+              </div>
+            </ul>
+          </div>
+        </div>
+    </nav>
+
+    <div class="container-fluir" id="admin">
+        <!-- ************************************************************************************ -->
+        <div class="col-12  text-center">
+            <div class="container">
+                <div class="row">
+                    <div class="card-group">
+                        <div class="card card-text-align-center  border border-0">
+                            <img src="../assets/images/logo.png" id="foto" class="card-img-top" alt="logo plantas reyes">
+                            <div class="card-body" id="cuerpo">
+                                <h5 class="card-title" id="titulos">Cambiar foto de perfil</h5>
+                            </div>
+                        </div>
+                        <div class="card border border-0">
+                            <div class="card-body" id="cuerpo">
+                                <h2 class="nombre" id="titulos">NOMBRE</h2>
+                                <p class="card-text" id="texto">Martin</p>
+                                <h2 class="apellido" id="titulos">APELLIDO</h2>
+                                <p class="card-text" id="texto">Reyes</p>
+                            </div>
+                        </div>
+                        <div class="card border border-0">
+                            <div class="card-body" id="cuerpo">
+                                <h2 class="correo" id="titulos">CORREO</h2>
+                                <p class="card-text" id="texto">martinreyes@gmail.com</p>
+                                <h4 class="apellido" id="titulos">cuenta de adminstracion</h4>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <br>
+                <!-- ************************************************************************************ -->
+                <!-- cards -->
+                <div class="container-fluid" id="opciones">
+                    <div class="row">
+                        <div class="col-sm-4">
+                            <div class="card border border-0" id="cardabajo">
+                                <div class="card-body" >
+                                    <h5 class="card-title">VENTAS Y PEDIDOS</h5>
+                                    <p class="card-text"  id="cardabajo">Ver estatus de pedidos como administracion</p>
+                                    <a href="#" id="button" class="btn btn-primary">Enviar</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-4">
+                            <div class="card border border-0">
+                                <div class="card-body">
+                                    <h5 class="card-title">EDITAR CATALOGO</h5>
+                                    <p class="card-text-align-center"  id="cardabajo">Crea productos y envialos directo al catalogo de
+                                        productos, de igual manera puedes eliminaralguno que ya no este en exibicion</p>
+                                    <a href="/pages/EdicionCatalogo.html" id="button" class="btn btn-primary">Enviar</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-4">
+                            <div class="card border border-0">
+                                <div class="card-body" >
+                                    <h5 class="card-title">CREAR PUBLICACION</h5>
+                                    <p class="card-text"  id="cardabajo" >Crear publicaciones en tu pagina como administrador</p>
+                                    <a href="#" id="button" class="btn btn-primary">Enviar</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+crossorigin="anonymous"></script>
+
+<script src="/js/carritoSpan.js" type="module"></script>
+
+</body>
+
+</html>

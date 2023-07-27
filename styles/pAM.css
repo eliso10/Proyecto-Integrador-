@@ -4,7 +4,7 @@ body {
     background-color: #EFE9E7;
 }
 
-.EncabezadoPI{
+.pam, #pam-con{
     background-color: #A5D09F;
 }
 
@@ -20,11 +20,11 @@ body {
     
 }
 
-#titulo-encabezado-PI{
+#titulo-pill-espacios{
     font-family: 'Merriweather', serif;
-    text-align: center;
     color: #EFE9E7;
     background-color: #815636;
+    padding: 30px;
 }
 
 #titulo-pill{
@@ -41,11 +41,6 @@ body {
     color: #000000;
 }
 
-#parrafoPI {
-    font-family: 'Montserrat', serif;
-    color: #ffffff;
-}
-
 #icono{
     height: 115px;
     width: 115px;
@@ -54,4 +49,10 @@ body {
 
 #cont-t{
     background-color: #A5D09F;
+}
+#titulo-encabezado-Pam{
+    font-family: 'Merriweather', serif;
+    text-align: center;
+    color: #EFE9E7;
+    background-color: #815636;
 }

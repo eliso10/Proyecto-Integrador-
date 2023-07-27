@@ -1,0 +1,50 @@
+
+/*todo esto corresponde a los estilos del Navbar*/
+#navbarNav,
+.container-fluid {
+  justify-content: right;
+  align-items: center;
+  text-align: end;
+  background-color: #679436;
+}
+
+.title {
+  margin-left: 1rem;
+  color: rgb(29, 26, 26);
+  font-family: 'Merriweather', serif;
+  text-decoration: none;
+  margin-right: 5rem;
+  margin-top: 0.5rem;
+}
+
+#iconoCarrito{
+  width: 2rem;
+  height: 2rem;
+}
+.navbar {
+
+  padding: 0;
+
+}
+
+.nav-link {
+  font-family: 'Montserrat', sans-serif;
+  font-size: medium;
+  margin-top: 0.5rem;
+
+}
+
+.nav-link:hover, .title:hover {
+  color: #EFE9E7;
+}
+/*hasta aqui terminan los estilos del navbar*/
+
+#footer {
+  background-color:#A5D09F ;
+  margin-top : 5rem;
+}
+
+
+.titulo_Navbar{
+  color: black;
+}
