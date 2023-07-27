@@ -3,7 +3,7 @@ var loMasPedido = [
         id: 5,
         nombre: "ECHEVERIA",
         url: "https://como-plantar.com/wp-content/uploads/2021/09/cuidar-y-cultivar-Echeveria-Peacockii.jpg.webp",
-        precio: 14.00,
+        precio: 140.00,
         descripcion: "La más bella de las suculentas con el más dócil de los cuidados"
     },
     {
@@ -34,106 +34,106 @@ var plantas = [
         id: 1,
         nombre: "SANSEVIERIA",
         url: "https://hips.hearstapps.com/hmg-prod/images/plantas-de-interior-resistentes-2-1543351859.jpg?crop=1xw:1xh;center,top&resize=980:*",
-        precio: 14.2,
-        descripcion: "Lorem Ipsum is simply dummy tex",
+        precio: 140.00,
+        descripcion: "Bonita y elegante, quedará ideal en la decoración interior de tu hogar",
     },
     {
         id: 2,
         nombre: "CROTÓ",
         url: "https://hips.hearstapps.com/hmg-prod/images/garden-croton-or-variegated-croton-euphorbiaceae-news-photo-1670849839.jpg?crop=1xw:1xh;center,top&resize=980:*",
-        precio: 14.2,
-        descripcion: "Lorem Ipsum is simply dummy tex"
+        precio: 250.00,
+        descripcion: "Es una de las plantas de interior que posee la mayor gama de colores vivos en sus hojas, requiere mucha luz"
     },
     {
         id: 3,
         nombre: "HELECHO BOSTON",
         url: "https://hips.hearstapps.com/hmg-prod/images/helecho-natural-1631189259.png?crop=1xw:1xh;center,top&resize=980:*",
-        precio: 14.2,
-        descripcion: "Lorem Ipsum is simply dummy tex"
+        precio: 180.00,
+        descripcion: "Un bello ejemplar, de fácil mantenimiento y destacada capacidad para purificar el ambiente"
     },
     {
         id: 4,
         nombre: "ECHEVERIA",
         url: "https://hips.hearstapps.com/hmg-prod/images/echeveria-flower-arrangement-news-photo-1670855481.jpg?crop=1xw:1xh;center,top&resize=980:*",
-        precio: 14.2,
-        descripcion: "Lorem Ipsum is simply dummy tex"
+        precio: 100.00,
+        descripcion: "La más bella de las suculentas con el más dócil de los cuidados"
     },
     {
         id: 5,
         nombre: "ECHEVERIA GOLD",
         url: "https://como-plantar.com/wp-content/uploads/2021/09/cuidar-y-cultivar-Echeveria-Peacockii.jpg.webp",
-        precio: 14.2,
-        descripcion: "Lorem Ipsum is simply dummy tex"
+        precio: 200.00,
+        descripcion: "Tu especie favorita de suculenta con un color sumamente especial"
     },
     {
         id: 6,
         nombre: "KALANCHOE",
         url: "https://como-plantar.com/wp-content/uploads/2023/01/como-plantar-Flor-de-la-fortuna-o-Kalanchoe.jpg.webp",
-        precio: 14.2,
-        descripcion: "Lorem Ipsum is simply dummy tex"
+        precio: 80.00,
+        descripcion: "De luz abundante y riego moderado, sus flores son un estallido de color"
     },
     {
         id: 7,
         nombre: "BEGONIA",
         url: "https://como-plantar.com/wp-content/uploads/2023/01/cuidados-y-como-plantar-begonias.jpg.webp",
-        precio: 14.2,
-        descripcion: "Lorem Ipsum is simply dummy tex"
+        precio: 150.00,
+        descripcion: "Una especie que destaca por sus hermosas flores y su vistoso follaje"
     },
     {
         id: 8,
         nombre: "CACTUS MINI",
         url: "https://como-plantar.com/wp-content/uploads/2021/09/cultivar-y-cuidar-cactus-oreja-de-conejo.jpg.webp",
-        precio: 14.2,
-        descripcion: "Lorem Ipsum is simply dummy tex"
+        precio: 45.00,
+        descripcion: "Una pequeña muestra del reino de las cactáceas, poco riego, ¡mucho sol!"
     },
     {
         id: 9,
         nombre: "MINI ROSA",
         url: "https://como-plantar.com/wp-content/uploads/2023/02/plantar-cuidar-rosas-de-pitimini-o-rosal-minirosas-de-pitimini-o-rosal-mini.jpg.webp",
-        precio: 14.2,
-        descripcion: "Lorem Ipsum is simply dummy tex"
+        precio: 50.00,
+        descripcion: "Tipo de variedad del rosal que te fascinará por su tamaño y su amplia variedad de tonalidades"
     },
     {
         id: 10,
         nombre: "PEPEROMÍA",
         url: "https://como-plantar.com/wp-content/uploads/2023/03/cuidados-y-como-plantar-peperomia.jpg.webp",
-        precio: 14.2,
-        descripcion: "Lorem Ipsum is simply dummy tex"
+        precio: 130.00,
+        descripcion: "Es una planta de interior de lo más decorativa, gracias a sus frondosas ramas y a sus hojas bellas y originales"
     },
     {
         id: 11,
         nombre: "PALMA ARECA",
         url: "https://i0.wp.com/plantify.mx/wp-content/uploads/2021/10/Palma-Areca-Gd.jpg?fit=1080%2C1080&ssl=1",
-        precio: 250.0,
-        descripcion: "planta de interior excelente para dar vida a tu sala",
+        precio: 250.00,
+        descripcion: "Planta de interior, excelente para dar vida a tu sala de estar",
     },
     {
         id: 12,
         nombre: "MUÑECA",
         url: "https://hagearbeider.com/wp-content/uploads/2021/02/1612526530_480_Omsorg-for-den-vakre-cordyline-tango.jpg",
-        precio: 240.0,
-        descripcion: "Planta de sombra da color a tus espacios con su tonalidad llamativa"
+        precio: 240.00,
+        descripcion: "Planta de sombra, da color a tus espacios con su tonalidad llamativa"
     },
     {
         id: 13,
         nombre: "ORQUÍDEAS",
         url: "https://editorialtelevisa.brightspotcdn.com/dims4/default/03eabb0/2147483647/strip/true/crop/1194x672+3+0/resize/1000x563!/quality/90/?url=https%3A%2F%2Fk2-prod-editorial-televisa.s3.amazonaws.com%2Fbrightspot%2Fwp-content%2Fuploads%2F2022%2F07%2Forquidea.jpg",
-        precio: 750.0,
-        descripcion: "Una planta que resalta por su elegancia y belleza excelente para mostrarla en tu casa o en tu oficina",
+        precio: 750.00,
+        descripcion: "Una planta que resalta por su elegancia y belleza, excelente para mostrarla en tu casa o en tu oficina",
     },
     {
         id: 14,
         nombre: "CALA",
         url: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTbKnbQkbQ3Mxz15xR8g-Qt3X4M4BsifaLfJA&usqp=CAU",
         precio: 350.00,
-        descripcion: "Planta de semisombra con colores llamativos apta para tu coleccion"
+        descripcion: "Planta de semisombra con colores llamativos apta para tu colección"
     },
     {
         id: 15,
         nombre: "ANTURIO",
         url: "https://www.elmueble.com/medio/2022/05/17/lilac-anturio_9317cc4d_674x674.jpeg",
         precio: 550.00,
-        descripcion: "planta de interior con una variedad de colores es una opcion excelente para dar vida a tu hogar ",
+        descripcion: "Planta de interior con una variedad de colores, es una opción excelente para dar vida a tu hogar ",
     },
     {
         id: 16,
@@ -179,7 +179,7 @@ var macetas = [
         nombre: "JARDINERA BARRO",
         url: "https://i0.wp.com/plantify.mx/wp-content/uploads/2021/10/Jardinera-Barro-1.jpg?resize=300%2C300&ssl=1",
         precio: 250.00,
-        descripcion: "Jardinera de barro para los minimalistas",
+        descripcion: "Jardinera de barro para los detalles minimalistas",
     },
     {
         id: 6,
@@ -234,59 +234,6 @@ var herramientas =[
         descripcion: "Para que tus plantas queden perfectamente regadas, utiliza nuestra manguera con soporte a pared"
     },
 ]
-
-/*carrito =[
-];
-
-//Buscar elementos en la BD de herramientas
-function buscarHerramientas(idHerramienta){
-var result = herramientas.find(item => item.id === idHerramienta);
-return result;
-}
-
-//Buscar elementos en la BD de plantas
-function buscarPlantas(idPlanta){
-    var result = plantas.find(item => item.id === idPlanta);
-    return result;
-}
-
-//Buscar elementos en la BD de macetas
-function buscarMacetas(idMacetas){
-    var result = macetas.find(item => item.id === idMacetas);
-    return result;
-}
-
-function añadirPlanta(nombre, url, precio, descripcion){
-    let lastKey = Object.keys(plantas).pop();
-    lastKey++;
-    lastKey++;
-    herramientas.push({'id': lastKey ,'nombre' : nombre, 'url': url, 'precio': precio, 'descripcion': descripcion});    
-}
-
-
-function añadirMacetas(nombre, url, precio, descripcion){
-    let lastKey = Object.keys(macetas).pop();
-    lastKey++;
-    lastKey++;
-    herramientas.push({'id': lastKey ,'nombre' : nombre, 'url': url, 'precio': precio, 'descripcion': descripcion}); 
-}
-
-function añadirHerramientas(nombre, url, precio, descripcion){
-    let lastKey = Object.keys(herramientas).pop();
-    lastKey++;
-    lastKey++;
-    herramientas.push({'id': lastKey ,'nombre' : nombre, 'url': url, 'precio': precio, 'descripcion': descripcion}); 
-}
-
-añadirHerramientas("Martillo", 'https://www.hm.supply/products/martillo-una', 'https://www.hm.supply/products/martillo-una', 300.00, 'ciowjiefmwinfiwniiniun');
-
-
-console.log(buscarHerramientas(2));
-console.log(herramientas);
-
-herramientas.push({'id': 1 ,'nombre' :'Manguera de Riego', 'url': 'https://plasticforte.com/wp-content/uploads/2022/06/accesorios-jardineria-plasticforte.jpg', 'precio': 500.00, 'descripcion': 'Para que tus plantas queden perfectamente regadas utiliza nuestra manguera con soporte a pared'});
-console.log(herramientas);
-*/
 
 //Buscar elementos en la BD de plantas
 export function buscarPlantasname(nombrePlanta){

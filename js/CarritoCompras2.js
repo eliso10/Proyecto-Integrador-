@@ -258,7 +258,7 @@ carrito.forEach(compra => {
     const buttonBorrar = document.createElement('BUTTON');
     buttonBorrar.setAttribute('class', 'botonTarjeta btn-sm btn-Eliminar');
     buttonBorrar.setAttribute('type', 'button');
-    buttonBorrar.textContent = "Eliminar del Carrito"
+    buttonBorrar.textContent = "Eliminar producto"
     buttonsContainer.appendChild(buttonBorrar);
     
     
@@ -276,7 +276,7 @@ carrito.forEach(compra => {
     const buttonRestar = document.createElement('BUTTON');
     buttonRestar.setAttribute('class', 'botonTarjeta col-5 mt-2 btn-Restar');
     buttonRestar.setAttribute('type', 'button');
-    buttonRestar.textContent = "Restar",
+    buttonRestar.textContent = "Remover",
     buttonsContainer2.appendChild(buttonRestar);
 
     mainContainerTarjetas.appendChild(mainContainer);
