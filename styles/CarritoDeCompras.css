@@ -157,3 +157,21 @@ h5{
     height: 0;
 }
 
+#valuesTitle{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+    column-gap: 1.6rem;
+    /*margin: 5rem;*/
+    font-family: Merriweather;
+    font-size: 4rem;
+    background-color: #A5D09F;
+    padding: 5rem;
+}
+
+#valuesTitle::before, #valuesTitle::after{
+    content: "";
+    height: 2px;
+    background-color: #000;
+    display:block;
+}
