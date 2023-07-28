@@ -287,12 +287,9 @@ export function añadirHerramientas(nombre, url, precio, descripcion) {
 
 export function añadirCarrito(producto) {
 
-    if (carrito == null) {
-        console.log("base de datos null")
-    }
-    else {
-        carrito = JSON.parse(localStorage.getItem('carrito'));
-    }
+
+        //carrito = JSON.parse(localStorage.getItem('carrito'));
+    
     
     const isFound = carrito.some(element => {
         if (element.id === producto.id) {
