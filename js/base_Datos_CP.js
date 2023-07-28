@@ -2,7 +2,7 @@ var loMasPedido = [
     {
         id: 5,
         nombre: "ECHEVERIA",
-        url: "https://como-plantar.com/wp-content/uploads/2021/09/cuidar-y-cultivar-Echeveria-Peacockii.jpg.webp",
+        url: "https://www.tuacasa.com.br/wp-content/uploads/2023/03/echeveria-elegans-1.png",
         precio: 140.00,
         descripcion: "La más bella de las suculentas con el más dócil de los cuidados"
     },
@@ -33,29 +33,29 @@ var plantas = [
     {
         id: 1,
         nombre: "SANSEVIERIA",
-        url: "https://hips.hearstapps.com/hmg-prod/images/plantas-de-interior-resistentes-2-1543351859.jpg?crop=1xw:1xh;center,top&resize=980:*",
+        url: "https://images.hola.com/imagenes/decoracion/20220818215417/sansevieria-trifasciata-cuidados-planta-interior-nu/1-126-655/Sansevieria-trifasciata-cuidados-t.jpg",
         precio: 140.00,
         descripcion: "Bonita y elegante, quedará ideal en la decoración interior de tu hogar",
     },
     {
         id: 2,
         nombre: "CROTÓ",
-        url: "https://hips.hearstapps.com/hmg-prod/images/garden-croton-or-variegated-croton-euphorbiaceae-news-photo-1670849839.jpg?crop=1xw:1xh;center,top&resize=980:*",
+        url: "https://d3ugyf2ht6aenh.cloudfront.net/stores/913/526/products/croton-petra-31-ad0e57592d1a44fc4b16344203153457-1024-1024.webp",
         precio: 250.00,
         descripcion: "Es una de las plantas de interior que posee la mayor gama de colores vivos en sus hojas, requiere mucha luz"
     },
     {
         id: 3,
         nombre: "HELECHO BOSTON",
-        url: "https://hips.hearstapps.com/hmg-prod/images/helecho-natural-1631189259.png?crop=1xw:1xh;center,top&resize=980:*",
+        url: "https://hips.hearstapps.com/es.h-cdn.co/mcres/images/media/images/helecho/1539006-1-esl-ES/helecho.jpg",
         precio: 180.00,
         descripcion: "Un bello ejemplar, de fácil mantenimiento y destacada capacidad para purificar el ambiente"
     },
     {
         id: 4,
         nombre: "ECHEVERIA",
-        url: "https://hips.hearstapps.com/hmg-prod/images/echeveria-flower-arrangement-news-photo-1670855481.jpg?crop=1xw:1xh;center,top&resize=980:*",
-        precio: 100.00,
+        url: "https://www.tuacasa.com.br/wp-content/uploads/2023/03/echeveria-elegans-1.png",
+        precio: 140.00,
         descripcion: "La más bella de las suculentas con el más dócil de los cuidados"
     },
     {
@@ -75,7 +75,7 @@ var plantas = [
     {
         id: 7,
         nombre: "BEGONIA",
-        url: "https://como-plantar.com/wp-content/uploads/2023/01/cuidados-y-como-plantar-begonias.jpg.webp",
+        url: "https://h2.commercev3.net/cdn.brecks.com/images/800/75696.jpg",
         precio: 150.00,
         descripcion: "Una especie que destaca por sus hermosas flores y su vistoso follaje"
     },
@@ -89,7 +89,7 @@ var plantas = [
     {
         id: 9,
         nombre: "MINI ROSA",
-        url: "https://como-plantar.com/wp-content/uploads/2023/02/plantar-cuidar-rosas-de-pitimini-o-rosal-minirosas-de-pitimini-o-rosal-mini.jpg.webp",
+        url: "https://agronomaster.com/wp-content/uploads/2018/08/cuidado-de-las-rosas-en-macetas-1.jpg",
         precio: 50.00,
         descripcion: "Tipo de variedad del rosal que te fascinará por su tamaño y su amplia variedad de tonalidades"
     },
