@@ -142,7 +142,7 @@ var plantas = [
         precio: 240.00,
         descripcion: "Planta de luz interior, una excelente opción si lo que buscas es tener una planta resistente y con mucho color"
     },
-    
+
 ];
 
 var macetas = [
@@ -190,7 +190,7 @@ var macetas = [
     },
 ];
 
-var herramientas =[
+var herramientas = [
     {
         id: 1,
         nombre: "FERTILIZANTE NITROFOSCA",
@@ -287,8 +287,13 @@ export function añadirHerramientas(nombre, url, precio, descripcion) {
 
 export function añadirCarrito(producto) {
 
-   carrito = JSON.parse(localStorage.getItem('carrito'));
-
+    if (carrito == null) {
+        console.log("base de datos null")
+    }
+    else {
+        carrito = JSON.parse(localStorage.getItem('carrito'));
+    }
+    
     const isFound = carrito.some(element => {
         if (element.id === producto.id) {
             return true;
