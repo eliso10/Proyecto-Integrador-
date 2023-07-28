@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@700&display=swap');
+
+#imagenLogo {
+    width: 15rem;
+    height: 15rem;
+    background-color: #EFE9E7 ;
+    border: none;
+}
+
+#categoria {
+    font-family: 'Merriweather', serif;
+    font-size: larger;
+    background-color: #EFE9E7;
+    height: 4rem;
+    margin: 0;
+}
+
+#boton{
+    padding: 10px 20px;
+    font-family: 'Merriweather', serif;
+    font-size: medium;
+    cursor: pointer;
+    background-color: #679436;
+    border: none;
+    margin: top 10px;
+    border-radius: 20px;
+    box-shadow: 1px 3px 11px -5px blueviolet
+}
+
+#boton:hover {
+    background-color: beige;
+    box-shadow: none;
+    transition: ease-in 0.5s;
+}
+body {
+    background: #EFE9E7;
+    background: linear-gradient(to right, #EFE9E7, #EFE9E7);
+  }
+
+#fondoEdicionDeCat{
+    background-color: #815636;
+}
+#tituloEdicion{
+    color: white;
+    text-align: center;
+    margin-top: 1.5rem;
+    margin-bottom: 2.5rem;
+    font-family: 'Merriweather', serif;
+
+}
+.card-img-top{
+    height: 21rem;
+}
+
+.footer{
+    background-color: #A5D09F ;
+}
+.nav{
+    background-color: #679436;
+}
+#nuevo{
+    color:black ;
+
+    font-size: .85rem;
+}
+#nuevo:hover{
+    color: #EFE9E7;
+}
+
+#botonCrear{
+    background-color:#679436;
+    border-color: #679436;
+    color: black;
+}
+#botonCrear:hover{
+    background-color: #A5D09F;
+    border-color: #EFE9E7;
+}
+#botonProducto{
+    background-color:#679436;
+    border-color: #679436;
+    color: black;
+}

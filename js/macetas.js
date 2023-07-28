@@ -1,10 +1,9 @@
 const containerCards = document.getElementById('container-cards');
 
 
-import {loMasPedido} from './base_Datos_CP.js'
-import {buscarloMasPedidoname} from './base_Datos_CP.js'
-import {añadirCarrito} from "./base_Datos.js";
-import {contadorCarrito} from "./carritoSpan.js";
+import {macetas} from './base_Datos_CP.js'
+import { buscarMacetasname } from './base_Datos_CP.js';
+import * as dateBase from "./base_Datos.js";
 
 const createCard = () => {
     const card = document.createElement('div');
@@ -17,39 +16,40 @@ const createCard = () => {
 }
 
 const createDescription = () => {
-    const elementsProduct = {
+    const elementsPot = {
         nombre: document.createElement('h1'),
         descripcion: document.createElement('p'),
         precio: document.createElement('p'),
         button: document.createElement('button'),
     }
     
-    return elementsProduct;
+    return elementsPot;
 }
 
 
-const populateElements = (infoProductos, producto) => {
-    infoProductos.nombre.textContent = producto.nombre ;
-    infoProductos.descripcion.textContent = producto.descripcion;
-    infoProductos.precio.textContent = "$"+producto.precio+" / pesos";
-    infoProductos.button.textContent = "Al Carrito";
+const populateElements = (infoPot, pot) => {
+    infoPot.nombre.textContent = pot.nombre ;
+    infoPot.descripcion.textContent = pot.descripcion;
+    infoPot.precio.textContent = "$"+pot.precio+" / pesos";
+    infoPot.button.textContent = "Al Carrito";
 
-    infoProductos.nombre.classList.add("nombreProducto");
-    infoProductos.precio.classList.add("precio");
-    infoProductos.descripcion.classList.add("decripcion");
-    infoProductos.button.classList.add("botonTarjeta");
+    infoPot.nombre.classList.add("nombreProducto");
+    infoPot.precio.classList.add("precio");
+    infoPot.descripcion.classList.add("decripcion");
+    infoPot.button.classList.add("botonTarjeta");
 
-    return infoProductos;
+    return infoPot;
 }
 
-const renderElements = (elements, card, producto) => {
+const renderElements = (elements, card, pot) => {
     const img = document.createElement('img');
-    img.src = producto.url;
+    img.src = pot.url;
     img.classList.add('img-fluid');
     img.alt = "Responsive image";
     
     card.children[0].append(img);
 
+    card.children[0].append(img);
     /* modificación para estilos de tarjetas, se creó constante information */
     elements.descripcion.classList.add('text-justify');
     const information = document.createElement('div');
@@ -59,13 +59,12 @@ const renderElements = (elements, card, producto) => {
 }
 
 
-loMasPedido.forEach(producto => {
+macetas.forEach(pot => {
     const card = createCard();
-    const elementsProduct = createDescription();
-    const populatedElements = populateElements(elementsProduct, producto);
-    renderElements(populatedElements, card, producto);
+    const elementsPot = createDescription();
+    const populatedElements = populateElements(elementsPot, pot);
+    renderElements(populatedElements, card, pot);
     containerCards.appendChild(card);
-
 });
 
 containerCards.addEventListener('click', e => {
@@ -73,15 +72,12 @@ containerCards.addEventListener('click', e => {
         const productoTarjeta = e.target.parentElement;
         console.log(productoTarjeta);
 
-        // //En caso de ser necesario se creo un objeto de java desde el arreglo directo
+        // //En caso de ser necesario creó un onjeto de java desde el arreglo directo
         const infoProduct = (productoTarjeta.querySelector('.nombreProducto').textContent);
         console.log(infoProduct);
-        const elementoBD = buscarloMasPedidoname(infoProduct);
+        const elementoBD = buscarMacetasname(infoProduct);
         console.log(elementoBD);
-        console.log(typeof(elementoBD));
-        añadirCarrito(elementoBD);
-        contadorCarrito();
+        dateBase.añadirCarrito(elementoBD);
+        
     }
-
 });
-

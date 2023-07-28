@@ -1,0 +1,118 @@
+/* div {
+    margin-top: 30px;
+    border: solid black;
+} */
+
+.card{
+margin: 1.25rem;
+width: 24.688rem;
+height: 50rem;
+border-radius: 1.5rem;
+border: 0.125rem solid #A5D09F;
+background: #A5D09F;
+}
+
+h1{
+    font-family: 'Merriweather', serif;
+    color: black;
+}
+button{
+    border: none;
+}
+.botonTarjeta{
+ align-items: center;
+}
+
+.img-fluid{
+    width:27.688rem;
+    height:18.438rem;
+}
+
+
+.tarjetaContenedor { 
+    overflow:hidden;
+	border: 0.125rem solid rgba(165.00000536441803, 208.0000028014183, 159.0000057220459, 1);
+	box-shadow:0rem 0.25rem 0.25rem rgba(0, 0, 0, 0.25);
+	background-color:rgba(165.00000536441803, 208.0000028014183, 159.0000057220459, 1);
+	width:24.688rem;
+	height:31.25rem;
+	border-top-left-radius:1.5rem;
+	border-top-right-radius:1.5rem;
+	border-bottom-left-radius:1.5rem;
+	border-bottom-right-radius:1.5rem;
+	position:relative;
+}
+
+.informacionContainer{
+	height: 3.25rem;
+	width: 21.875rem;
+	position:absolute;
+	left:2rem;
+	top:24.375rem;
+  	overflow: clip;
+  	text-overflow: ellipsis;
+}
+.nombreProducto{ 
+	width:18.75rem;
+	height:1.625rem;
+	position:absolute;
+	left:2rem;
+	top:20.375rem;
+	font-family:Merriweather;
+	text-align:left;
+	font-size:1.25rem;
+	letter-spacing:7;
+    
+}
+.precio { 
+	color:rgba(66.00000366568565, 107.00000122189522, 31.000000052154064, 1);
+	width:8.875rem;
+	height:1.625rem;
+	position:absolute;
+	left:2rem;
+	top:22.5rem;
+	font-family:Montserrat;
+	text-align:left;
+	font-size:1.25rem;
+	letter-spacing:0;
+}
+.decripcion { 
+	color:rgba(109.43750202655792, 109.43750202655792, 109.43750202655792, 1);
+	width:20.125rem;
+	height:.2rem;
+	position:static;
+	left:2rem;
+	top:24.625rem;
+	font-family:Montserrat;
+	text-align:left;
+	font-size:1rem;
+	letter-spacing:0;
+	
+	
+}
+.imagenProducto{ 
+	width:27.688rem;
+	height:18.5rem;
+	position:absolute;
+	left:-1.5rem;
+	top:0rem;
+}
+.botonTarjeta { 
+	background-color:rgba(103.0000014603138, 148.000006377697, 54.00000058114529, 1);
+	width:10.625rem;
+	height:2.938rem;
+	position:absolute;
+	left:6.9rem;
+	top:27.813rem;
+    font-family:Merriweather;
+    color: white;
+}
+
+#text{
+	text-overflow: clip;
+}
+
+.botonTarjeta:hover { 
+	transform: scale(1.15);
+	transition: all 0.3s;
+}

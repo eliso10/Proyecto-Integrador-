@@ -1,0 +1,158 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@900&family=Montserrat:wght@500&display=swap');
+
+body {
+    background-color: #EFE9E7;
+
+    }
+
+    .fondo{
+        background-color:#A5D09F;
+        height: 20rem;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    
+    
+    #header {
+        font-family: 'Merriweather';
+        color: #141212;
+        font-size: 3rem;
+    }    
+
+    #subtext{
+        font-family: 'Montserrat';
+        color: #141212;
+        font-size: 1.5rem;
+    }
+
+    /*
+#sobreNosotros {
+    font-family: 'Merriweather', serif;
+    text-align: center;
+    color: #EFE9E7; 
+    background-color: #815636;
+}
+*/
+
+.card{
+    box-shadow: 0 12px 16px rgba(0,0,0,0.2);
+}
+
+
+.contenedor-texto{
+    background-color: none;
+}
+
+.titles {
+    font-family: 'Merriweather', serif;
+    color: #000000;
+    
+}
+
+#parrafo {
+    font-family: 'Montserrat', sans-serif;
+    color: black;
+}
+
+
+#titulos {
+    font-family: 'Merriweather', serif;
+    color: #000000;
+    text-align:center;
+}
+
+#texto{
+    font-family: 'Montserrat', sans-serif;
+    color: black;
+    text-align:center;
+}
+
+
+#cuerpo{
+    background-color: #A5D09F;
+    border-color: #EFE9E7;
+    margin: auto;
+}
+
+/* TÍTULO: VALORES*/
+#valuesTitle{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+    column-gap: 1.6rem;
+    margin: 5rem;
+    font-size: 4rem;
+}
+
+#valuesTitle::before, #valuesTitle::after{
+    content: "";
+    height: 2px;
+    background-color: #000;
+    display:block;
+}
+
+
+/* VALUES CARDS*/  
+
+#valuesContainer{
+    width: 30rem;
+    height: 20rem;
+    perspective: 800px;
+    margin-top: 2.5rem;
+    margin-bottom: 2.5rem;
+}
+
+#valuesContainer:hover > #valuesCard {
+    cursor:pointer;
+    transform:rotateY(180deg);
+}
+
+#valuesCard{
+    height: 100%;
+    width: 100%;
+    position:relative;
+    transition: transform 1500ms; 
+    transform-style: preserve-3d; 
+    border-radius: 1rem;
+
+}
+
+
+.front,
+.back{
+    height: 100%;
+    width: 100%;
+    border-radius: 1rem;
+    box-shadow: 0 0 5px 2px rgba(50, 50, 50, 0.25);
+    position:absolute;
+    backface-visibility: hidden;
+    padding: 1rem;
+}
+
+
+
+.back{
+    background-color: #A5D09F;
+    transform: rotateY(180deg);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+}
+
+@media (max-width: 768px) {
+    .cards-grid {
+      display: flex;
+      flex-direction: column;
+    }
+  }
+  
+  
+  
+  .img-fluid{
+    width:100%;
+    display: block;
+  }
+  

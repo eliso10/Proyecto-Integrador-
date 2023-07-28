@@ -1,0 +1,78 @@
+/*todo esto corresponde a los estilos del Navbar*/
+#navbarNav,
+.container-fluid {
+  justify-content: right;
+  align-items: center;
+  text-align: end;
+  background-color: #679436;
+}
+
+.title {
+  margin-left: 1rem;
+  color: rgb(29, 26, 26);
+  font-family: 'Merriweather', serif;
+  text-decoration: none;
+  
+}
+
+#iconoCarrito{
+  width: 2rem;
+  height: 2rem;
+  
+}
+
+#navbarPrincipal {
+    padding-top: 0px;
+    padding-bottom: 0px;
+}
+
+.nav-link {
+  font-family: 'Montserrat', sans-serif;
+ 
+
+.nav-link:hover, .title:hover {
+  color: #EFE9E7;
+}
+nav-item:hover, .title:hover {
+  color: #EFE9E7;
+}
+/*hasta aqui terminan los estilos del navbar*/
+
+#footer {
+  background-color:#679436;
+  margin-top : 0rem;
+}
+
+#iconos-redes {
+  height: 4rem ;
+  width: 4rem ;
+  margin-top: 1rem;
+}
+
+.nav-item{
+  background-color: #679436;
+}
+
+.rounded-circle{
+  background-color: #679436;
+}
+
+#iconoCarrito{
+  background-color: #679436;
+}
+
+#titulo, #llevas-todo{
+  background-color: #815636;
+  color: white;
+  font-family: 'Merriweather', serif;
+}
+
+/* cambios en el  estilo para el carrito de compras */
+
+#fondo{
+    border-color: #EFE9E7;
+}
+
+#compra{
+  margin-bottom: 1rem
+}

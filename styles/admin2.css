@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@700&display=swap');
+
+#foto{
+    background-color:rgba(239.00000095367432, 233.00000131130219, 231.00000143051147, 1);
+}
+
+#admin{
+    background-color: rgba(239.00000095367432, 233.00000131130219, 231.00000143051147, 1);
+}
+
+#opciones{
+    margin-bottom: 10rem;
+}
+
+#titulos{
+    margin-top: 5rem;
+}
+#texto{
+    height: 7rem;
+}
+
+
+
+.division{
+    border-width: .2rem;
+    color: #679436;
+}
+
+.card-body{
+    background-color: rgba(239.00000095367432, 233.00000131130219, 231.00000143051147, 1);
+    border: 2rem solid var(--contrast);
+    text-align:center;
+    font-family: 'Montserrat', sans-serif;
+}
+#button{
+    background-color: rgba(103.0000014603138, 148.000006377697, 54.00000058114529, 1);
+}
+
+p{
+    font-family: 'Montserrat', sans-serif;
+}
+#fotode{
+    text-align:center;
+}

@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrito de Compras</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@200&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../styles/CarritoDeCompras.css">
+    <!-- <link href="/styles/Navbar.css" rel="stylesheet"> -->
+    <link rel="stylesheet" href="/styles/NavbarCarrito.css">
+    <!-- <script src="/js/CarritoTarjeta.js" async defer></script> -->
+    <script src="/js/CarritoCompras2.js" async defer type="module"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+</head>
+
+<body>
+   <!-- Navbar  correcciones-->
+  <nav class="navbar navbar-expand-lg" id="navbarPrincipal">
+    <div class="container-fluid">
+      <img class="rounded-circle"  src="/assets/images/logoNavbar.png" width="60rem" alt="Plantas Reyes" />
+      <a class="title" href="/index.html">
+        <h4 class="titulo_Navbar">Plantas Reyes</h4>
+      </a>
+    
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse font-navbar" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="/pages/sobre-nosotros.html">Sobre nosotros</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./catalogo.html">Catalogo de Productos</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./pAM.html">Proyectos a Medida</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./contactanos.html">Contactanos</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="/pages/CarritoDeCompras.html">Carrito de Compras</a>
+          </li>
+
+          <li class="nav-item">
+          <li class="nav-item">
+
+            <a class="nav-link" href="/pages/CarritoDeCompras.html" id="carritoIcon">
+              <img src="../assets/icons/iconoCarrito.png" id="iconoCarrito">
+
+            </a>
+          </li>
+          </li>
+          <li class="nav-item dropdown" id="Usuario-Estatus">
+            <a class="nav-link dropdown-toggle" href="" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Iniciar Sesion
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="../pages/login.html">Ingresa a tu cuenta</a></li>
+
+              <li>
+                <a class="dropdown-item" href="../pages/signup.html">Registrate</a>
+              </li>
+
+            </ul>
+          </li>
+
+      </div>
+    </div>
+  </nav> 
+  <!--fin del navbar-->
+ 
+    <div class="container-fluid text-center" id="tituloCompra">
+        <h1 id="titulo">Tu Carrito de Compras </h1>
+        <p id="llevas-todo">¿llevas todo lo que necesitas?</p>
+
+    </div>
+    <div class="container-fluid text-center secundario ">
+        <div class="row align-items-center items-secundario">
+
+
+
+    <div class="container " id="fondo">
+        <div class="d-flex justify-content-center row">
+            <div class="col-md-10" id="elementosCarritos">
+
+                <div class="row p-2 bg border rounded itemComp align-items-center">
+                      <!-- Imagen de la Tarjeta 
+                    <div class="col-md-3 mt-1">
+                      <img class="img-fluid img-responsive rounded product-image" src="https://como-plantar.com/wp-content/uploads/2021/09/cultivar-y-cuidar-cactus-oreja-de-conejo.jpg.webp">
+                    </div>-->
+
+                    <!-- Nombre y Descripción del propducto 
+                    <div class="col-md-6 mt-1 row informacion">
+                      
+                        <h5 class="d-flex justify-content-start NombreTarjeta">Cactus mini</h5>
+                        <div class=" d-flex justify-content-start mt-1 mb-1 spec-1"><span>Diseño Unico</span><span class="dot"></span><span>Casa</span><span class="dot"></span><span>Oficina<br></span></div>
+                        <p class="justify-content-start text-justify para mb-0">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable.<br><br></p>
+                    </div>
+                      -->
+                    
+                    <!-- Elemntos de precio y botones 
+                    <div class="align-items-center align-content-center col-md-3 border-left mt-1 row">
+
+                          <div class="d-flex flex-row justify-content-center">
+                              <h1 class="mr-1 precioProducto">$13.99</h1>
+                          </div>
+                          <h6 class="text-success">Free shipping</h6>
+                          <div class="d-flex flex-column mt-4">
+                            <button class="btn btn-primary btn-sm" type="button">Borrar</button>
+                            <div class="row justify-content-around">
+                              <button class="btn  btn-primary btn-sm col-5 mt-2" type="button">Añadir</button>
+                              <button class="btn  btn-primary btn-sm col-5 mt-2" type="button">Restar</button>
+                            </div>
+                         
+                        </div>
+                    </div>-->
+
+                </div>
+
+
+            </div>
+            <div class="d-flex flex-row d-flex justify-content-end col-md-10">
+
+              <p id="total">Total a pagar: </p>
+          </div>
+          <hr>
+            <div class="d-flex flex-row d-flex justify-content-end col-md-10">
+
+              <button type="button" class="botonTarjeta btn-lg " id="compra" onclick="window.location.href = './payment.html';" style="font-size: 1.5rem;">Comprar</button>
+
+          </div>
+          
+        </div>
+        
+    </div>
+    
+
+    
+  
+
+    <!--inicio footer-->
+  <div id="footer" class="container-fluid">
+    <div class="row p-5">
+      <div class="col-xs-12 col-md-6 col-lg-3">
+        <img src="/assets/icons/Plantas_reyes_LOGOS-09.png" alt="PlantasReyes" width="100rem" height="100rem">
+      </div>
+      <div class="col-xs-12 col-md-6 col-lg-3">
+
+        <a href="/pages/sobre-nosotros.html">
+          <p>Nosotros</p>
+        </a>
+        <a href="/pages/contactanos.html">
+          <p>Contacto</p>
+        </a>
+        <img src="/assets/icons/facebook.png" alt="facebook" id="iconos-redes">
+      </div>
+      <div class="col-xs-12 col-md-6 col-lg-3">
+
+        <p>Términos y condiciones</p>
+
+        <p>Preguntas frecuentes</p>
+        <img src="/assets/icons/instagram.png" alt="instagram" id="iconos-redes">
+      </div>
+      <div class="col-xs-12 col-md-6 col-lg-3">
+        <p>Aviso de privacidad</p>
+
+        <p>Envios, pagos y devoluciones</p>
+        <img src="/assets/icons/github.png" alt="github" id="iconos-redes">
+      </div>
+    </div>
+  
+  </div>
+  <script src="/js/carritoSpan.js" type="module"></script>
+  <!--___________________________________________FIN PIE DE PAGINA___________________________________________-->
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+        crossorigin="anonymous"></script>
+        <script src="/js/carritoSpan.js" type="module"></script>
+        <script src="/js/UserStatus.js"></script>
+    
+</body>
+
+</html>
