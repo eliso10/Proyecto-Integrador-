@@ -31,6 +31,7 @@ form.addEventListener('submit',(event)=>{
     //se muestra en consola el objeto json
     console.log(JSON.stringify(allData));
 
+    localStorage.setItem('UserStatus', "true");
     //Enviar a la pagina de inicio si se inicia sesion exitosamente
       window.location.href = '../index.html';
 
