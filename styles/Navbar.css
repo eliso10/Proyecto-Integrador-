@@ -48,3 +48,7 @@
 .titulo_Navbar{
   color: black;
 }
+nav {
+  padding: 0;  /* Establece el padding a 0 para quitarlo */
+  /* También puedes usar padding-top, padding-right, padding-bottom, o padding-left para ajustar solo ciertos lados */
+}

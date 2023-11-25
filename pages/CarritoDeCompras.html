@@ -7,7 +7,7 @@
   <title>Carrito de Compras</title>
  
   <link rel="stylesheet" href="../styles/CarritoDeCompras.css">
-  <link rel="stylesheet" href="/styles/NavbarCarrito.css">
+  <link rel="stylesheet" href="../styles/Navbar.css">
   <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@900&family=Montserrat:wght@500&display=swap"
   rel="stylesheet">
   <script src="/js/CarritoCompras2.js" async defer type="module"></script>
@@ -16,65 +16,62 @@
 </head>
 
 <body>
-  <!-- Navbar  correcciones-->
-  <nav class="navbar navbar-expand-lg" id="navbarPrincipal">
-    <div class="container-fluid">
-      <img class="rounded-circle" src="/assets/images/logoNavbar.png" width="60rem" alt="Plantas Reyes" />
-      <a class="title" href="/index.html">
-        <h4 class="titulo_Navbar">PLANTAS REYES</h4>
-      </a>
+<!-- Inicia Navbar -->
+<nav class="navbar navbar-expand-lg">
+  <div class="container-fluid">
+    <img class="rounded-circle" src="../assets/images/logoNavbar.png" width="60rem" alt="Plantas Reyes" />
+    <a class="title" href="/index.html">
+      <h4>PLANTAS REYES</h4>
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+      aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
 
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
+    <div class="collapse navbar-collapse font-navbar" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link" href="./sobre-nosotros.html">Sobre nosotros</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="./catalogo.html">Catálogo de productos</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="./pAM.html">Proyectos a medida</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="./contactanos.html">Contáctanos</a>
+        </li>
 
-      <div class="collapse navbar-collapse font-navbar" id="navbarNav">
-        <ul class="navbar-nav">
-          <li class="nav-item">
-            <a class="nav-link" href="/pages/sobre-nosotros.html">Sobre nosotros</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="./catalogo.html">Catalogo de Productos</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="./pAM.html">Proyectos a Medida</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="./contactanos.html">Contactanos</a>
-          </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/pages/CarritoDeCompras.html">Carrito de compras</a>
+        </li>
 
-          <li class="nav-item">
-            <a class="nav-link" href="/pages/CarritoDeCompras.html">Carrito de Compras</a>
-          </li>
+        <li class="nav-item">
+        <li class="nav-item">
+          <a class="nav-link" href="/pages/CarritoDeCompras.html" id="carritoIcon">
+            <img src="../assets/icons/iconoCarrito.png" id="iconoCarrito" alt="iconoCarrito">
+          </a>
+        </li>
+        </li>
+        <li class="nav-item dropdown" id="Usuario-Estatus">
+          <a class="nav-link dropdown-toggle" href="" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Iniciar sesión
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="../pages/login.html">Ingresa a tu cuenta</a></li>
 
-          <li class="nav-item">
-          <li class="nav-item">
+            <li>
+              <a class="dropdown-item" href="../pages/signup.html">Regístrate</a>
+            </li>
 
-            <a class="nav-link" href="/pages/CarritoDeCompras.html" id="carritoIcon">
-              <img src="../assets/icons/iconoCarrito.png" id="iconoCarrito">
+          </ul>
+        </li>
 
-            </a>
-          </li>
-          </li>
-          <li class="nav-item dropdown" id="Usuario-Estatus">
-            <a class="nav-link dropdown-toggle" href="" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-              Iniciar Sesion
-            </a>
-            <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="../pages/login.html">Ingresa a tu cuenta</a></li>
-
-              <li>
-                <a class="dropdown-item" href="../pages/signup.html">Registrate</a>
-              </li>
-
-            </ul>
-          </li>
-
-      </div>
     </div>
-  </nav>
-  <!--fin del navbar-->
+  </div>
+</nav>
+<!--fin del navbar-->
 
 
   <!-- HEADER CARRITO-->
